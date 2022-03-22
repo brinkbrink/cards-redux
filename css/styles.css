@@ -1,3 +1,15 @@
-* {
+
+
+body {
     background-color: rgb(190, 190, 190);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(255, 154, 154);;
+}
+
+h3 {
+    font-style: italic;
 }
