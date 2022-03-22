@@ -16,6 +16,25 @@ h3 {
     font-style: italic;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 25px;
+    height: 361px;
+    width: 19%;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 20px;
+    font-size: 31px;
+
+}
+
 /*  overrides jQuery defaults */
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
