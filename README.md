@@ -1,2 +1,2 @@
 # cards-redux
-Cards repo again, but with JavaScript and a database this time.
+Cards again, but with JavaScript and a database this time.
