@@ -1,2 +1,3 @@
 # cards-redux
-Cards repo again, but with JavaScript this time.
+## UNDER CONSTRUCTION
+Cards again, but with JavaScript and a database this time.
