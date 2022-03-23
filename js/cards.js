@@ -171,11 +171,11 @@ let m7 = cardsm[y];
 let m8 = cardsm[z];
 
 // add loop for each hand
-document.getElementById("cardm1").innerHTML = m1;
-document.getElementById("cardm2").innerHTML = m2;
-document.getElementById("cardm3").innerHTML = m3;
-document.getElementById("cardm4").innerHTML = m4;
-document.getElementById("cardm5").innerHTML = m5;
-document.getElementById("cardm6").innerHTML = m6;
-document.getElementById("cardm7").innerHTML = m7;
-document.getElementById("cardm8").innerHTML = m8;
+document.getElementById("m1").innerHTML = m1;
+document.getElementById("m2").innerHTML = m2;
+document.getElementById("m3").innerHTML = m3;
+document.getElementById("m4").innerHTML = m4;
+document.getElementById("m5").innerHTML = m5;
+document.getElementById("m6").innerHTML = m6;
+document.getElementById("m7").innerHTML = m7;
+document.getElementById("m8").innerHTML = m8;
