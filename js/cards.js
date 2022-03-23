@@ -24,8 +24,167 @@ document.getElementById("p8").innerHTML = getRandomInt(71,80);
 //     int = getRandomInt(0,20)
 // }
 
+// papa's cards
+
+let cardsp = new Array();
+
+cardsp[0] = 'Silence.';
+cardsp[1] = 'The illusion of choice in a latestage capitalist society.';
+cardsp[2] = 'Many bats.';
+cardsp[3] = 'Hot Asian men.';
+cardsp[4] = 'Shame.';
+cardsp[5] = 'Website.';
+cardsp[6] = 'Assaulting a police officer.';
+cardsp[7] = 'Magnets.';
+cardsp[8] = 'A sorry excuse for a father.';
+cardsp[9] = 'Seeing what happens when you lock people in a room with hungry seagulls.';
+cardsp[10] = 'A crucifixion.';
+cardsp[11] = 'A narc.';
+cardsp[12] = 'Boneless buffalo wings.';
+cardsp[13] = 'A live studio audience.';
+cardsp[14] = 'Complaining.';
+cardsp[15] = 'Authentic Mexican cuisine';
+cardsp[16] = 'Doing crimes.';
+cardsp[17] = 'COVID-19.';
+cardsp[18] = 'Crippling debt.';
+cardsp[19] = 'Daddy issues.';
+cardsp[20] = 'Working in an Amazon warehouse.';
+cardsp[21] = 'A fart so powerful that it wakes the giants from their thousand-year slumber.';
+cardsp[22] = 'Former President George W. Bush.';
+cardsp[23] = 'Full frontal nudity.';
+cardsp[24] = 'Covering myself with Parmesan cheese and chili flakes because I am pizza.';
+cardsp[25] = 'Laying an egg.';
+cardsp[26] = 'Getting naked and watching Nickelodeon.';
+cardsp[27] = 'Pretending to care.';
+cardsp[28] = 'Having big dreams but no realistic way to achieve them.';
+cardsp[29] = 'Seeing Grandma naked.';
+cardsp[30] = 'Lactation.';
+cardsp[31] = 'Shutting up so I can watch the game.';
+cardsp[32] = 'One titty hanging out.';
+cardsp[33] = 'Drinking gasoline to see what it tastes like.';
+cardsp[34] = 'Inappropriate yodeling.';
+cardsp[35] = 'Puberty.';
+cardsp[36] = 'Ghosts.';
+cardsp[37] = '50 mg of Zoloft daily.';
+cardsp[38] = 'Braiding three penises into a Twizzler.';
+cardsp[39] = 'Vigorous jazz hands.';
+cardsp[40] = 'My Uber driver, Pavel.';
+cardsp[41] = 'Strong female characters.';
+cardsp[42] = 'Getting decapitated by a helicopter.';
+cardsp[43] = 'Hospice care.';
+cardsp[44] = 'Getting really high.';
+cardsp[45] = 'The opioid epidemic.';
+cardsp[46] = 'Penis envy.';
+cardsp[47] = 'Gay conversion therapy';
+cardsp[48] = 'Burgers and pussy.';
+cardsp[49] = 'German Chancellor Angela Merkel.';
+cardsp[50] = 'The KKK.';
+cardsp[51] = 'Ethnic cleansing.';
+cardsp[52] = 'A fuck-ton of almonds.';
+cardsp[53] = 'A salad for men that is made of metal.';
+cardsp[54] = 'Waiting till marriage.';
+cardsp[55] = 'Unfathomable stupidity';
+cardsp[56] = 'Pretending to be a dentist.';
+cardsp[57] = 'The Devil himself.';
+cardsp[58] = 'Salvation.';
+cardsp[59] = 'The Pope.';
+cardsp[60] = 'My pet scorpion, Tina.';
+cardsp[61] = 'Two Xanax and a bottle of wine.';
+cardsp[62] = 'The magic of live theatre.';
+cardsp[63] = 'Throwing a virgin into a volcano.';
+cardsp[64] = 'Dwayne “The Rock” Johnson.';
+cardsp[65] = 'Accepting the way things are.';
+cardsp[66] = 'NBA superstar LeBron James.';
+cardsp[67] = 'Listening to her problems without trying to solve them.';
+cardsp[68] = 'Therapy.';
+cardsp[69] = 'Being fat and stupid.';
+cardsp[70] = 'A salty surprise.';
+cardsp[71] = 'Fucking the weatherman on live television.';
+cardsp[72] = 'PTSD.';
+cardsp[73] = 'Dark and mysterious forces beyond our control.';
+cardsp[74] = 'Smallpox blankets.';
+cardsp[75] = 'Masturbating.';
+cardsp[76] = 'Hobos.';
+cardsp[77] = 'Queefing.';
+cardsp[78] = 'Cardi B.';
+cardsp[79] = 'Soup that is too hot.';
+cardsp[80] = 'The ugliest boy in town.';
+cardsp[81] = 'A time-traveling Chinese general from the Shang Dynasty.';
+cardsp[82] = 'A bird that shits human turds.';
+cardsp[83] = 'A mopey zoo lion.';
+cardsp[84] = 'A bag of magic beans.';
+cardsp[85] = 'Poor life choices.';
+cardsp[86] = 'Auschwitz.';
+cardsp[87] = 'Cocaine for lunch.';
+cardsp[88] = 'The Big Bang.';
+cardsp[89] = 'Land mines';
+cardsp[90] = 'Lumberjack fantasies.';
+cardsp[91] = 'Women in yogurt commercials.';
+cardsp[92] = "Morgan Freeman's voice.";
+cardsp[93] = 'Fake tits.';
+cardsp[94] = 'The Amish.';
+cardsp[95] = 'The milkman.';
+cardsp[96] = 'Swamp ass.';
+cardsp[97] = 'The bombing of Nagasaki.';
+cardsp[98] = 'Drinking out of the toilet and eating garbage.';
+cardsp[99] = 'Heartwarming orphans.';
+cardsp[100] = 'A windmill full of corpses.';
+cardsp[101] = 'Flightless birds.';
+cardsp[102] = 'Panda.';
+cardsp[103] = 'Gandhi.';
+cardsp[104] = "Jacob's ladder.";
+cardsp[105] = 'Pentogram.';
+cardsp[106] = 'Deviled eggs.';
+cardsp[107] = 'Nut cracker.';
+cardsp[108] = 'Raindrops on roses.';
+cardsp[109] = 'Whiskers on kittens.';
+cardsp[110] = 'Bright copper kettles.';
+cardsp[111] = 'Warm woolen mittens.';
+cardsp[112] = 'Brown paper packages tied up with strings.';
+cardsp[113] = 'Hamburgers.';
+cardsp[114] = 'Brisket.';
+cardsp[115] = 'Vegan at Thanksgiving.';
+cardsp[116] = 'Blood relative.';
+cardsp[117] = 'Monkey Gram.';
+cardsp[118] = 'Little baby Jesus.';
+cardsp[119] = 'Ugly wrapping paper.';
+cardsp[120] = 'Mistletoe.';
+cardsp[121] = 'WILD CARD!! <img alt="panda the cat" src="images/panda.jpg">';
+
+let ps = getRandomInt(0,14);
+let pt = getRandomInt(15,29);
+let pu = getRandomInt(30,44);
+let pv = getRandomInt(45,59);
+let pw = getRandomInt(60,74);
+let px = getRandomInt(75,89);
+let py = getRandomInt(90,104);
+let pz = getRandomInt(105,121);
+
+// add if statements to disallow repeat cards
+
+//add loop for each assignment below
+// let a = cards[x];
+let p1 = cardsp[ps];
+let p2 = cardsp[pt];
+let p3 = cardsp[pu];
+let p4 = cardsp[pv];
+let p5 = cardsp[pw];
+let p6 = cardsp[px];
+let p7 = cardsp[py];
+let p8 = cardsp[pz];
+
+// add loop for each hand
+document.getElementById("p1").innerHTML = p1;
+document.getElementById("p2").innerHTML = p2;
+document.getElementById("p3").innerHTML = p3;
+document.getElementById("p4").innerHTML = p4;
+document.getElementById("p5").innerHTML = p5;
+document.getElementById("p6").innerHTML = p6;
+document.getElementById("p7").innerHTML = p7;
+document.getElementById("p8").innerHTML = p8;
 
 
+// mom's cards
 let cardsm = new Array();
 
 cardsm[0] = 'Switching to Geico.';
@@ -155,27 +314,27 @@ cardsm[120] = 'Lavendar growing on the Olympic Peninsula.';
 // 'dklj'
 // ];
 
-let s = getRandomInt(0,14);
-let t = getRandomInt(15,29);
-let u = getRandomInt(30,44);
-let v = getRandomInt(45,59);
-let w = getRandomInt(60,74);
-let x = getRandomInt(75,89);
-let y = getRandomInt(90,104);
-let z = getRandomInt(105,120);
+let ms = getRandomInt(0,14);
+let mt = getRandomInt(15,29);
+let mu = getRandomInt(30,44);
+let mv = getRandomInt(45,59);
+let mw = getRandomInt(60,74);
+let mx = getRandomInt(75,89);
+let my = getRandomInt(90,104);
+let mz = getRandomInt(105,120);
 
 // add if statements to disallow repeat cards
 
 //add loop for each assignment below
 // let a = cards[x];
-let m1 = cardsm[s];
-let m2 = cardsm[t];
-let m3 = cardsm[u];
-let m4 = cardsm[v];
-let m5 = cardsm[w];
-let m6 = cardsm[x];
-let m7 = cardsm[y];
-let m8 = cardsm[z];
+let m1 = cardsm[ms];
+let m2 = cardsm[mt];
+let m3 = cardsm[mu];
+let m4 = cardsm[mv];
+let m5 = cardsm[mw];
+let m6 = cardsm[mx];
+let m7 = cardsm[my];
+let m8 = cardsm[mz];
 
 // add loop for each hand
 document.getElementById("m1").innerHTML = m1;
@@ -186,3 +345,99 @@ document.getElementById("m5").innerHTML = m5;
 document.getElementById("m6").innerHTML = m6;
 document.getElementById("m7").innerHTML = m7;
 document.getElementById("m8").innerHTML = m8;
+
+// em's cards
+
+
+
+// v's cards
+
+
+// for the white card
+let cards = new Array();
+
+cards[0] = 'Hey Reddit! I am __________. Ask me anything.';
+cards[1] = 'Introducing X-treme Baseball! It is like baseball, but with __________!';
+cards[2] = 'Next from J.K. Rowling: Harry Potter and the Chamber of __________.';
+cards[3] = "That's right, I killed __________. How, you ask? __________.";
+cards[4] = "Dude, do not goin that bathroom. There's __________ in there.";
+cards[5] = "__________. Betcha can't have just one!";
+cards[6] = "Kids, I don't need drugs to get high. I'm high on __________.";
+cards[7] = 'In the new Disney Channel Original Movie, Hannah Montana struggles with __________ for the first time.';
+cards[8] = 'What is my secret power?';
+cards[9] = "What is Batman's guilty pleasure?";
+cards[10] = 'TSA guidelines now prohibit __________ on airplanes.';
+cards[11] = "I'm sorry, Professor, but I couldn't complete my homework because of __________.";
+cards[12] = 'And the Academy Award for __________ goes to __________.';
+cards[13] = "It's a pity that kids these days are all getting involved with __________.";
+cards[14] = 'Step 1: __________. <br>Step 2: __________. <br>Step 3: Profit.';
+cards[15] = 'For my next trick, I will pull __________ out of __________.';
+cards[16] = '? I’m going on a cleanse this week. Nothing but kale juice and __________.';
+cards[17] = '__________ + __________= __________.';
+cards[18] = 'When Pharaoh remained unmoved, Moses called down a Plague of __________.';
+cards[19] = 'Just once, I would like to hear you say “Thanks, Mom. Thanks for __________.”';
+cards[20] = '50% of all marriages end in __________.';
+cards[21] = 'My fellow Americans: Before this decade is out, we will have __________ on the moon!';
+cards[22] = 'Life for Americans was forever changed when the White House introduced them to __________.';
+cards[23] = 'What is Teach For America using to inspire inner city students to succeed?';
+cards[24] = '__________ is a slippery slope that leads to __________.';
+cards[25] = 'Daddy, why is mommy crying?';
+cards[26] = 'When I was tripping on acid, turned into __________.';
+cards[27] = "This season at Steppenwolf, Samuel Beckett's classic existential play: Waiting for __________.";
+cards[28] = 'Instead of coal, Santa now gives the bad children __________.';
+cards[29] = "Maybe she's born with it. Maybe it's __________.";
+cards[30] = 'What is George W. Bush thinking about right now?';
+cards[31] = 'Why do I hurt all over?';
+cards[32] = 'A romantic, candlelit dinner would be incomplete without __________.';
+cards[33] = 'The class field trip was completely ruined by __________.';
+cards[34] = "What's a girl's best friend?";
+cards[35] = "Dear Abby, I'm having some trouble with __________ and would like your advice.";
+cards[36] = "In Jordan Peele's new thriller, a young family discovers that __________ had really been __________ all along.";
+cards[37] = 'What never fails to liven up the party?';
+cards[38] = 'IF you like __________, YOU MIGHT BE A REDNECK.';
+cards[39] = 'Hey guys, welcome to Chilis! Would you like to start the night off right with __________?';
+cards[40] = 'I got 99 problems but __________ aint one.';
+cards[41] = 'What would grandma find disturbing, yet oddly charming?';
+cards[42] = '__________. That was so metal.';
+cards[43] = 'What is that sound?';
+cards[44] = 'When I am President, I will create the Department of _________.';
+cards[45] = 'What are my parents hiding from me?';
+cards[46] = 'Make a haiku.';
+cards[47] = 'What made my first kiss so awkward?';
+cards[48] = "__________. It's a trap!";
+cards[49] = "Hulu's new reality show features twelve hot singles living with __________.";
+cards[50] = 'I never truly understood until I encountered __________.';
+cards[51] = 'During sex, I like to think about __________.';
+cards[52] = "Uh, hey guys, I know this was my idea, but I'm having serious doubts about __________.";
+cards[53] = 'Why am I sticky?';
+cards[54] = "I'm no doctor, but I'm pretty sure what you're suffering from is called '__________'.";
+cards[55] = 'Lifetime® presents: \"the Story of.\”';
+cards[56] = 'What is that smell?';
+cards[57] = 'Why is Brett so sweaty?';
+cards[58] = 'Here is the church Here is the steeple <br>Open the doors <br>And there is __________.';
+cards[59] = 'But before I kill you, Mr. Bond, I must show you __________.';
+cards[60] = 'Next on ESPN2: The World Series of __________.';
+cards[61] = 'Tis the season to be __________.';
+cards[62] = '__________, _________, _________; these are a few of my favorite things!';
+cards[63] = 'We have seen some of our guests ________ like a true ___________!';
+cards[64] = 'My kids are not impressed by my __________.';
+cards[65] = 'Joy to the __________.';
+cards[66] = 'You are the __________ to my __________.';
+cards[67] = '______lords.';
+cards[68] = 'Did you bring enough _________ to share with the whole class?';
+cards[69] = 'Have you seen the new Gordon Ramsey show? __________ Nightmares?';
+cards[70] = 'Merry ________ and a happy new _________.';
+cards[71] = 'Go to the __________ District. They have the best __________.';
+cards[72] = 'We wish you a merry __________ and happy new __________.';
+cards[73] = 'Whispering sweet __________.';
+cards[74] = "Uh, don't you know we're supposed to be boycotting _________ right now?";
+cards[75] = 'The __________ union sure has __________ shaking in their boots.';
+cards[76] = 'Our relationship is strictly professional. Let\'s not complicate things with';
+cards[77] = 'My tweet about _________________ got 100,000 retweets!';
+cards[78] = 'March _________ bring April _______';
+cards[79] = 'I I\'m sorry, Professor, but I couldn\'t complete my homework because ofsaw _________ kissing Santa Claus.';
+cards[80] = 'In line with our predictions, we find a robust correlation between _________ and __________ (p>.05).';
+
+let a = getRandomInt(0,80);
+let b = cards[a];
+document.getElementById("white").innerHTML = b;
