@@ -325,8 +325,7 @@ let mz = getRandomInt(105,120);
 
 // add if statements to disallow repeat cards
 
-//add loop for each assignment below
-// let a = cards[x];
+// add loop for each assignment below
 let m1 = cardsm[ms];
 let m2 = cardsm[mt];
 let m3 = cardsm[mu];
@@ -348,10 +347,165 @@ document.getElementById("m8").innerHTML = m8;
 
 // em's cards
 
+let cardse = new Array();
 
+cardse[0] = 'Boogers.';
+cardse[1] = 'The miracle of childbirth.';
+cardse[2] = 'A positive attitude!';
+cardse[3] = 'Having a stroke.';
+cardse[4] = 'Emerging from the sea and rampaging through Tokyo.';
+cardse[5] = 'The Hamburglar.';
+cardse[6] = 'AXE Body Spray.';
+cardse[7] = 'The Blood of Christ.';
+cardse[8] = 'Soft, kissy missionary sex.';
+cardse[9] = 'BATMAN!';
+cardse[10] = 'Agriculture.';
+cardse[11] = 'Barely making $25,000 a year.';
+cardse[12] = 'Natural selection. ';
+cardse[13] = 'Boomers.';
+cardse[14] = 'Prescription pain killers.';
+cardse[15] = 'Swooping.';
+cardse[16] = 'Mansplaining.';
+cardse[17] = 'A homoerotic volleyball montage.';
+cardse[18] = 'Alexandria Ocasio-Cortez.';
+cardse[19] = 'Putting things where they go.';
+cardse[20] = 'Holding a pepper grinder for some reason.';
+cardse[21] = 'All-you-can-eat shrimp for $8.99.'; cardse[22] = 'An old guy who is almost dead.';
+cardse[23] = 'Kanye West.';
+cardse[24] = 'Hot cheese.';
+cardse[25] = 'Getting serial killed.';
+cardse[26] = 'Seven dead and three in critical condition.';
+cardse[27] = 'Smegma.';
+cardse[28] = 'Alcoholism.';
+cardse[29] = 'A middle-aged man on roller skates.';
+cardse[30] = 'Hurting those closest to me.';
+cardse[31] = 'Laughing over champagne flutes while the poor freeze to death outside.';
+cardse[32] = 'GoGurt';
+cardse[33] = 'Filling my briefcase with business stuff.';
+cardse[34] = 'Preteens.';
+cardse[35] = 'My fat daughter.';
+cardse[36] = 'Clean drinking water.';
+cardse[37] = 'Fading away into nothingness.';
+cardse[38] = 'Darth Vader.';
+cardse[39] = 'Exactly what you would expect.';
+cardse[40] = 'Expecting a burp and vomiting on the floor.';
+cardse[41] = 'Only dating Asian women.';
+cardse[42] = 'Putting children in cages.';
+cardse[43] = 'Karen.';
+cardse[44] = 'How amazing it is to be on mushrooms.';
+cardse[45] = 'Judging everyone.';
+cardse[46] = 'Kourtney, Kim, Khloe, Kendall, and Kylie.';
+cardse[47] = 'Getting married, having a few kids, buying some stuff, retiring to Florida, and dying.';
+cardse[48] = 'Some god damn peace and quiet.';
+cardse[49] = 'AIDS.';
+cardse[50] = 'Pictures of boobs.';
+cardse[51] = 'Breaking out into song and dance.';
+cardse[52] = 'Leprosy.';
+cardse[53] = 'Gloryholes.';
+cardse[54] = 'Nipple blades.';
+cardse[55] = 'The heart of a child.';
+cardse[56] = 'Puppies!';
+cardse[57] = 'Fellowship in Christ.';
+cardse[58] = 'Waking up half-naked in a Denny\'s parking lot.';
+cardse[59] = 'Getting drugs off the street and into my body.';
+cardse[60] = 'Active listening.';
+cardse[61] = 'Two Xanax and a bottle of wine.';
+cardse[62] = 'Pooping back and forth. Forever.';
+cardse[63] = 'The South.';
+cardse[64] = 'The violation of our most basic human rights.';
+cardse[65] = 'Saudi oil money.';
+cardse[66] = 'Telling a shitty story that goes nowhere.';
+cardse[67] = 'A good, strong gorilla.';
+cardse[68] = 'Seeing my father cry.';
+cardse[69] = 'Necrophilia.';
+cardse[70] = 'Being a woman.';
+cardse[71] = 'Explaining how vaginas work.';
+cardse[72] = 'Academy Award winner Meryl Streep.';
+cardse[73] = 'Drinking alone.';
+cardse[74] = 'Dick fingers.';
+cardse[75] = 'Multiple stab wounds.';
+cardse[76] = 'The death penalty.';
+cardse[77] = 'A supportive touch on the lower back.';
+cardse[78] = 'Slaughtering innocent civilians.';
+cardse[79] = 'Candied pecans.';
+cardse[80] = 'Horse meat.';
+cardse[81] = 'Huffing spray paint.';
+cardse[82] = 'Invading Poland.';
+cardse[83] = 'Assless chaps.';
+cardse[84] = 'Murder.';
+cardse[85] = 'Sipping kombucha like a smug piece of shit.';
+cardse[86] = 'Her Majesty, Queen Elizabeth II.';
+cardse[87] = 'Black Jesus.';
+cardse[88] = 'Memes.';
+cardse[89] = 'Goblins.';
+cardse[90] = 'Hope.';
+cardse[91] = 'Fox News.';
+cardse[92] = 'A little boy who will not shut the fuck up about dinosaurs.';
+cardse[93] = 'Climbing a telephone pole and becoming one with the T-Mobile network.';
+cardse[94] = "This month's mass shooting.";
+cardse[95] = 'Barack Obama.';
+cardse[96] = 'Illegal immigrants.';
+cardse[97] = 'Heteronormativity.';
+cardse[98] = 'Crumbs all over the god damn carpet.';
+cardse[99] = 'Corporate America.';
+cardse[100] = 'Insatiable hunger.';
+cardse[101] = 'The prostate.';
+cardse[102] = 'Being a motherfucking sorcerer.';
+cardse[103] = 'Greenies.';
+cardse[104] = 'Genuine human connection.';
+cardse[105] = 'Balls.';
+cardse[106] = 'Grandma.';
+cardse[107] = 'Friction.';
+cardse[108] = 'Chunks of dead hitchhiker.';
+cardse[109] = 'My ugly face and bad personality.';
+cardse[110] = 'A bitch slap.';
+cardse[111] = 'Winner of Survivor\'s 42nd season';
+cardse[112] = 'Kitty litter.';
+cardse[113] = 'Quesadilla';
+cardse[114] = '$3 tip for carrying out your own order from Domino\'s.';
+cardse[115] = 'Mask-ne.';
+cardse[116] = 'Slyvia Plath\'s "The Bell Jar."';
+cardse[117] = 'Next round on me!';
+cardse[118] = 'Oktoberfest.';
+cardse[119] = 'Yakima hops.';
+cardse[120] = 'Eastern European history.';
+
+// the following makes the card's readings random
+
+let es = getRandomInt(0,14);
+let et = getRandomInt(15,29);
+let eu = getRandomInt(30,44);
+let ev = getRandomInt(45,59);
+let ew = getRandomInt(60,74);
+let ex = getRandomInt(75,89);
+let ey = getRandomInt(90,104);
+let ez = getRandomInt(105,120);
+
+// add if statements to disallow repeat cards
+
+// add loop for each assignment below
+let e1 = cardse[es];
+let e2 = cardse[et];
+let e3 = cardse[eu];
+let e4 = cardse[ev];
+let e5 = cardse[ew];
+let e6 = cardse[ex];
+let e7 = cardse[ey];
+let e8 = cardse[ez];
+
+// add loop for each hand
+document.getElementById("e1").innerHTML = e1;
+document.getElementById("e2").innerHTML = e2;
+document.getElementById("e3").innerHTML = e3;
+document.getElementById("e4").innerHTML = e4;
+document.getElementById("e5").innerHTML = e5;
+document.getElementById("e6").innerHTML = e6;
+document.getElementById("e7").innerHTML = e7;
+document.getElementById("e8").innerHTML = e8;
 
 // v's cards
 
+let cardsv = new Array();
 
 // for the white card
 let cards = new Array();
