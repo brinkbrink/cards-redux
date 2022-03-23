@@ -11,7 +11,13 @@ function getRandomInt(min, max) {
 
 document.getElementById("card1").innerHTML = getRandomInt(1,10);
 
-function assignStatement(int) {
-    int = getRandomInt(0,20)
-    
-}
+// function assignStatement(int) {
+//     int = getRandomInt(0,20)
+// }
+
+let cards = ['Apple', 'ddd','dklj'];
+
+let x = getRandomInt(0,2);
+let y = cards[x];
+
+document.getElementById("card2").innerHTML = y;
