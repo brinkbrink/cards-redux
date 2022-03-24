@@ -84,8 +84,12 @@ label {
 
 .ui-tabs .ui-tabs-panel {
     background-image: url(/images/wood.png);
+    height: 90vh;
+    overflow: scroll;
 }
 
 #welcome, #directions, #submit {
     background: #000;
+    height: 80vh;
+    overflow: scroll;
 }
