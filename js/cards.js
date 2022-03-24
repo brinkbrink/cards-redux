@@ -813,49 +813,49 @@ function modifyp8Text() {
 // mama's cards
 function  modifym1Text() {
   const w = document.getElementById("m1");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,15);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym2Text() {
   const w = document.getElementById("m2");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(16,30);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym3Text() {
   const w = document.getElementById("m3");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(31,45);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym4Text() {
   const w = document.getElementById("m4");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(46,60);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym5Text() {
   const w = document.getElementById("m5");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(61,75);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym6Text() {
   const w = document.getElementById("m6");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(76,90);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym7Text() {
   const w = document.getElementById("m7");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(91,105);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
 function  modifym8Text() {
   const w = document.getElementById("m8");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(106,120);
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
