@@ -679,7 +679,7 @@ cards[10] = 'TSA guidelines now prohibit __________ on airplanes.';
 cards[11] = "I'm sorry, Professor, but I couldn't complete my homework because of __________.";
 cards[12] = 'And the Academy Award for __________ goes to __________.';
 cards[13] = "It's a pity that kids these days are all getting involved with __________.";
-cards[14] = 'Step 1: __________. <br>Step 2: __________. <br>Step 3: Profit.';
+cards[14] = 'Step 1: __________.  Step 2: __________. Step 3: Profit.';
 cards[15] = 'For my next trick, I will pull __________ out of __________.';
 cards[16] = '? I’m going on a cleanse this week. Nothing but kale juice and __________.';
 cards[17] = '__________ + __________= __________.';
@@ -723,7 +723,7 @@ cards[54] = "I'm no doctor, but I'm pretty sure what you're suffering from is ca
 cards[55] = 'Lifetime® presents: \"the Story of.\”';
 cards[56] = 'What is that smell?';
 cards[57] = 'Why is Brett so sweaty?';
-cards[58] = 'Here is the church Here is the steeple <br>Open the doors <br>And there is __________.';
+cards[58] = 'Here is the church Here is the steeple  Open the doors  And there is __________.';
 cards[59] = 'But before I kill you, Mr. Bond, I must show you __________.';
 cards[60] = 'Next on ESPN2: The World Series of __________.';
 cards[61] = 'Tis the season to be __________.';
@@ -749,17 +749,93 @@ cards[80] = 'In line with our predictions, we find a robust correlation between 
 
 let a = getRandomInt(0,80);
 let b = cards[a];
-document.getElementById("white").innerHTML = b;
+document.getElementById("black").innerHTML = b;
 
 
-// to change card content on click
-function modifyText() {
-  const w = document.getElementById("white");
+// to change black card content on click
+function modifybText() {
+  const w = document.getElementById("black");
   let a = getRandomInt(0,80);
   let b = cards[a];
   w.firstChild.nodeValue = b;
 }
 
-// Add event listener
-const el = document.getElementById("sel");
-el.addEventListener("click", modifyText, false);
+// to change white cards content
+// papa's cards
+function modifyp1Text() {
+  const w = document.getElementById("p1");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp2Text() {
+  const w = document.getElementById("p2");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp3Text() {
+  const w = document.getElementById("p3");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp4Text() {
+  const w = document.getElementById("p4");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp5Text() {
+  const w = document.getElementById("p5");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp6Text() {
+  const w = document.getElementById("p6");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp7Text() {
+  const w = document.getElementById("p7");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+function modifyp8Text() {
+  const w = document.getElementById("p8");
+  let a = getRandomInt(0,80);
+  let b = cardsp[a];
+  w.firstChild.nodeValue = b;
+}
+
+
+// Add event listeners--figure out a way to make this more efficient??
+const sel = document.getElementById("sel");
+sel.addEventListener("click", modifybText, false);
+
+const pcard1 = document.getElementById("p1");
+pcard1.addEventListener("click", modifyp1Text, false);
+const pcard2 = document.getElementById("p2");
+pcard2.addEventListener("click", modifyp2Text, false);
+const pcard3 = document.getElementById("p3");
+pcard3.addEventListener("click", modifyp3Text, false);
+const pcard4 = document.getElementById("p4");
+pcard4.addEventListener("click", modifyp4Text, false);
+const pcard5 = document.getElementById("p5");
+pcard5.addEventListener("click", modifyp5Text, false);
+const pcard6 = document.getElementById("p6");
+pcard6.addEventListener("click", modifyp6Text, false);
+const pcard7 = document.getElementById("p7");
+pcard7.addEventListener("click", modifyp7Text, false);
+const pcard8 = document.getElementById("p8");
+pcard8.addEventListener("click", modifyp8Text, false);
