@@ -755,7 +755,9 @@ document.getElementById("white").innerHTML = b;
 // to change card content on click
 function modifyText() {
   const w = document.getElementById("white");
-  w.firstChild.nodeValue = cards[2]
+  let a = getRandomInt(0,80);
+  let b = cards[a];
+  w.firstChild.nodeValue = b;
 }
 
 // Add event listener
