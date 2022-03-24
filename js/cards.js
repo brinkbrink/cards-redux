@@ -760,7 +760,7 @@ function modifybText() {
   w.firstChild.nodeValue = b;
 }
 
-// to change white cards content
+// functions to change white cards content
 // papa's cards
 function modifyp1Text() {
   const w = document.getElementById("p1");
@@ -768,61 +768,103 @@ function modifyp1Text() {
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp2Text() {
   const w = document.getElementById("p2");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp3Text() {
   const w = document.getElementById("p3");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp4Text() {
   const w = document.getElementById("p4");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp5Text() {
   const w = document.getElementById("p5");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp6Text() {
   const w = document.getElementById("p6");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp7Text() {
   const w = document.getElementById("p7");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp8Text() {
   const w = document.getElementById("p8");
   let a = getRandomInt(0,80);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
+// mama's cards
+function  modifym1Text() {
+  const w = document.getElementById("m1");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym2Text() {
+  const w = document.getElementById("m2");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym3Text() {
+  const w = document.getElementById("m3");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym4Text() {
+  const w = document.getElementById("m4");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym5Text() {
+  const w = document.getElementById("m5");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym6Text() {
+  const w = document.getElementById("m6");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym7Text() {
+  const w = document.getElementById("m7");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
+function  modifym8Text() {
+  const w = document.getElementById("m8");
+  let a = getRandomInt(0,80);
+  let b = cardsm[a];
+  w.firstChild.nodeValue = b;
+}
 
 // Add event listeners--figure out a way to make this more efficient??
 const sel = document.getElementById("sel");
 sel.addEventListener("click", modifybText, false);
 
+// papa's cards
 const pcard1 = document.getElementById("p1");
 pcard1.addEventListener("click", modifyp1Text, false);
 const pcard2 = document.getElementById("p2");
@@ -839,3 +881,21 @@ const pcard7 = document.getElementById("p7");
 pcard7.addEventListener("click", modifyp7Text, false);
 const pcard8 = document.getElementById("p8");
 pcard8.addEventListener("click", modifyp8Text, false);
+
+// mama's cards
+const mcard1 = document.getElementById("m1");
+mcard1.addEventListener("click", modifym1Text, false);
+const mcard2 = document.getElementById("m2");
+mcard2.addEventListener("click", modifym2Text, false);
+const mcard3 = document.getElementById("m3");
+mcard3.addEventListener("click", modifym3Text, false);
+const mcard4 = document.getElementById("m4");
+mcard4.addEventListener("click", modifym4Text, false);
+const mcard5 = document.getElementById("m5");
+mcard5.addEventListener("click", modifym5Text, false);
+const mcard6 = document.getElementById("m6");
+mcard6.addEventListener("click", modifym6Text, false);
+const mcard7 = document.getElementById("m7");
+mcard7.addEventListener("click", modifym7Text, false);
+const mcard8 = document.getElementById("m8");
+mcard8.addEventListener("click", modifym8Text, false);
