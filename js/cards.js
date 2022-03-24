@@ -750,3 +750,14 @@ cards[80] = 'In line with our predictions, we find a robust correlation between 
 let a = getRandomInt(0,80);
 let b = cards[a];
 document.getElementById("white").innerHTML = b;
+
+
+// to change card content on click
+function modifyText() {
+  const w = document.getElementById("white");
+  w.firstChild.nodeValue = cards[2]
+}
+
+// Add event listener
+const el = document.getElementById("sel");
+el.addEventListener("click", modifyText, false);
