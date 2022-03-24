@@ -859,6 +859,9 @@ function  modifym8Text() {
   let b = cardsm[a];
   w.firstChild.nodeValue = b;
 }
+// em's cards
+
+// v's cards
 
 // Add event listeners--figure out a way to make this more efficient??
 const sel = document.getElementById("sel");
@@ -899,3 +902,7 @@ const mcard7 = document.getElementById("m7");
 mcard7.addEventListener("click", modifym7Text, false);
 const mcard8 = document.getElementById("m8");
 mcard8.addEventListener("click", modifym8Text, false);
+
+// em's cards
+
+// v's cards
