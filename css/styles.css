@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(190, 190, 190);
+    background-color: #000;
 }
 
 main {
@@ -12,8 +12,64 @@ main {
     background-color: rgb(255, 154, 154);;
 }
 
+h1, h2, h3 {
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
 h3 {
     font-style: italic;
+    font-size: 4em;
+}
+
+ol {
+    color: #fff;
+    font-size: 4em;
+}
+
+label {
+    color: #fff;
+    font-size: 4em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 25px;
+    height: 361px;
+    width: 24%;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 20px;
+    font-size: 31px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#black {
+    border-radius: 25px;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+    font-size: 31px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*  overrides jQuery defaults */
@@ -24,4 +80,16 @@ h3 {
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     background-color: rgb(0, 36, 102);
+}
+
+.ui-tabs .ui-tabs-panel {
+    background-image: url(/images/wood.png);
+    height: 90vh;
+    overflow: scroll;
+}
+
+#welcome, #directions, #submit {
+    background: #000;
+    height: 80vh;
+    overflow: scroll;
 }

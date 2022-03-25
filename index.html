@@ -11,46 +11,95 @@
 <body>
   <div id="tabs">
     <ul>
-      <li><a href="#tabs-1">Welcome</a></li>
-      <li><a href="#tabs-2">Directions</a></li>
-      <li><a href="#tabs-3">Papa</a></li>
-      <li><a href="#tabs-4">Mama</a></li>
-      <li><a href="#tabs-5">Em</a></li>
-      <li><a href="#tabs-6">V</a></li>
-      <li><a href="#tabs-7">Selector Cards</a></li>
-      <li><a href="#tabs-8">Submit Answers</a></li>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#directions">Directions</a></li>
+      <li><a href="#papa">Papa</a></li>
+      <li><a href="#mama">Mama</a></li>
+      <li><a href="#em">Em</a></li>
+      <li><a href="#v">V</a></li>
+      <li><a href="#sel">Selector Cards</a></li>
+      <li><a href="#submit">Submit Answers</a></li>
     </ul>
-    <div id="tabs-1">
+    <div id="welcome">
         <h1>Cards Against Humanity</h1>
         <h3>For Personal Use of the Brink Family</h3>
-        <h2>Welcome to Cards Against Humanity: the Brink</h2>
     </div>
-    <div id="tabs-2">
+    <div id="directions">
         <h3>Directions</h3>
         <ol>
             <li>Lorem ipsum dolor sit amet Consectetuer adipiscing elit sed diam</li>
             <li>Nibh euismod tincidunt ut Laoreet dolore magna aliquam erat</li>
             <li>Ut wisi enim ad Minim veniam quis nostrud exerci</li>
             <li>Ullamcorper suscipit lobortis nisl</li>
+            <li>Lorem ipsum dolor sit amet Consectetuer adipiscing elit sed diam</li>
+            <li>Nibh euismod tincidunt ut Laoreet dolore magna aliquam erat</li>
+            <li>Ut wisi enim ad Minim veniam quis nostrud exerci</li>
+            <li>Ullamcorper suscipit lobortis nisl</li>
+            <li>Lorem ipsum dolor sit amet Consectetuer adipiscing elit sed diam</li>
+            <li>Nibh euismod tincidunt ut Laoreet dolore magna aliquam erat</li>
+            <li>Ut wisi enim ad Minim veniam quis nostrud exerci</li>
+            <li>Ullamcorper suscipit lobortis nisl</li>
         </ol>
     </div>
-    <div id="tabs-3">
-        <?php echo 'hi' ?>
+    <div id="papa">
+        <div id="pcards" class="cards">
+            <div class="card" id="p1">card here</div>
+            <div class="card" id="p2">card here</div>
+            <div class="card" id="p3">card here</div>
+            <div class="card" id="p4">card here</div>
+            <div class="card" id="p5">card here</div>
+            <div class="card" id="p6">card here</div>
+            <div class="card" id="p7">card here</div>
+            <div class="card" id="p8">card here</div>
+        </div>
     </div>
-    <div id="tabs-4">
-        HAND 1
+    <div id="mama">
+        <div class="cards">
+            <div class="card" id="m1">card here</div>
+            <div class="card" id="m2">card here</div>
+            <div class="card" id="m3">card here</div>
+            <div class="card" id="m4">card here</div>
+            <div class="card" id="m5">card here</div>
+            <div class="card" id="m6">card here</div>
+            <div class="card" id="m7">card here</div>
+            <div class="card" id="m8">card here</div>
+        </div>
     </div>
-    <div id="tabs-5">
-        HAND 1
+    <div id="em">
+        <div class="cards">
+            <div class="card" id="e1">card here</div>
+            <div class="card" id="e2">card here</div>
+            <div class="card" id="e3">card here</div>
+            <div class="card" id="e4">card here</div>
+            <div class="card" id="e5">card here</div>
+            <div class="card" id="e6">card here</div>
+            <div class="card" id="e7">card here</div>
+            <div class="card" id="e8">card here</div>
+        </div>
     </div>
-    <div id="tabs-6">
-        HAND 1
+    <div id="v">
+        <div class="cards">
+            <div class="card" id="v1">card here</div>
+            <div class="card" id="v2">card here</div>
+            <div class="card" id="v3">card here</div>
+            <div class="card" id="v4">card here</div>
+            <div class="card" id="v5">card here</div>
+            <div class="card" id="v6">card here</div>
+            <div class="card" id="v7">card here</div>
+            <div class="card" id="v8">card here</div>
+        </div>
     </div>
-    <div id="tabs-7">
-       WHITE CARD
+    <div id="sel">
+        <div id="black">card here</div>
     </div>
-    <div id="tabs-8">
-        SUBMIT
+    <div id="submit">
+        <form method="post" action="/thankyou.html">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="lname">Answer:</label><br>
+            <input type="text" id="answer" name="answer"><br><br>
+            <input type="submit" value="Submit">
+          </form> 
     </div>
 </div>
 <script src="js/cards.js"></script>
