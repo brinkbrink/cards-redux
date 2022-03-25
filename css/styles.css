@@ -1,5 +1,5 @@
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
 }
 
 body {
@@ -14,11 +14,13 @@ main {
 
 h1, h2, h3 {
     color: #fff;
-    text-align: center;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 12em;
+    line-height: .9em;
+    margin: 0.3em;
+    padding: 0em 0em 0em .09em;
 }
 
 h2 {
@@ -26,8 +28,8 @@ h2 {
 }
 
 h3 {
-    font-style: italic;
     font-size: 4em;
+    padding: 0em 0em 0em 1.4em;
 }
 
 ol {
