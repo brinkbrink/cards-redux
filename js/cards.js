@@ -774,6 +774,13 @@ function modifybText() {
 function modifyp1Text() {
   const w = document.getElementById("p1");
   let a = getRandomInt(0,120);
+  // let used = new Array();
+  // used.push(a);
+  //if(a is not in used[]){
+  //   let b = cardsp[a];
+  // } else {
+  //   repeat??
+  // }
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
