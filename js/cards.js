@@ -774,6 +774,8 @@ function modifybText() {
 function modifyp1Text() {
   const w = document.getElementById("p1");
   let a = getRandomInt(0,120);
+  // should probably be its own function
+  // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
   // let used = new Array();
   // used.push(a);
   //if(a is not in used[]){
