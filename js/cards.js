@@ -762,6 +762,13 @@ function modifybText() {
 
 // functions to change white cards content
 // papa's cards
+// starting an idea about how to make these functions generic?
+// function modifyCardText(id){
+//   const w = document.getElementById(id);
+//   let a = getRandomInt(0,120);
+//   let b = cardsp[a];
+//   w.firstChild.nodeValue = b;
+// }
 
 function modifyp1Text() {
   const w = document.getElementById("p1");
