@@ -777,52 +777,51 @@ function modifyp1Text() {
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
-
 function modifyp1Text() {
   const w = document.getElementById("p1");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp2Text() {
   const w = document.getElementById("p2");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp3Text() {
   const w = document.getElementById("p3");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp4Text() {
   const w = document.getElementById("p4");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp5Text() {
   const w = document.getElementById("p5");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp6Text() {
   const w = document.getElementById("p6");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp7Text() {
   const w = document.getElementById("p7");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
 function modifyp8Text() {
   const w = document.getElementById("p8");
-  let a = getRandomInt(0,80);
+  let a = getRandomInt(0,120);
   let b = cardsp[a];
   w.firstChild.nodeValue = b;
 }
