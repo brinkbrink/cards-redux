@@ -11,14 +11,14 @@ function getRandomInt(min, max) {
   }
 
 //test
-document.getElementById("p1").innerHTML = getRandomInt(1,10);
-document.getElementById("p2").innerHTML = getRandomInt(11,20);
-document.getElementById("p3").innerHTML = getRandomInt(21,30);
-document.getElementById("p4").innerHTML = getRandomInt(31,40);
-document.getElementById("p5").innerHTML = getRandomInt(41,50);
-document.getElementById("p6").innerHTML = getRandomInt(51,60);
-document.getElementById("p7").innerHTML = getRandomInt(61,70);
-document.getElementById("p8").innerHTML = getRandomInt(71,80);
+// document.getElementById("p1").innerHTML = getRandomInt(1,10);
+// document.getElementById("p2").innerHTML = getRandomInt(11,20);
+// document.getElementById("p3").innerHTML = getRandomInt(21,30);
+// document.getElementById("p4").innerHTML = getRandomInt(31,40);
+// document.getElementById("p5").innerHTML = getRandomInt(41,50);
+// document.getElementById("p6").innerHTML = getRandomInt(51,60);
+// document.getElementById("p7").innerHTML = getRandomInt(61,70);
+// document.getElementById("p8").innerHTML = getRandomInt(71,80);
 
 // function assignStatement(int) {
 //     int = getRandomInt(0,20)
@@ -771,12 +771,13 @@ function modifybText() {
 // }
 
 // papa's cards
+  // let used = new Array();
+
 function modifyp1Text() {
   const w = document.getElementById("p1");
   let a = getRandomInt(0,120);
   // should probably be its own function
   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-  // let used = new Array();
   // used.push(a);
   //if(a is not in used[]){
   //   let b = cardsp[a];
