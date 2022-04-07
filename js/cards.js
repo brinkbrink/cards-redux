@@ -764,7 +764,8 @@ function modifybText() {
 }
 
 // functions to change white cards content
-// papa's cards
+
+// possible generic
 // function modifyText(id, i) {
   // const w = document.getElementById("id");
   // let rand = getRandomInt(0,120);
@@ -772,6 +773,7 @@ function modifybText() {
   // w.firstChild.nodeValue = hand;
 // }
 
+// papa's cards
 function modifyp1Text() {
   const w = document.getElementById("p1");
   let a = getRandomInt(0,120);
