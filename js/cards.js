@@ -24,6 +24,9 @@ document.getElementById("p8").innerHTML = getRandomInt(71,80);
 //     int = getRandomInt(0,20)
 // }
 
+
+// create new array for whatever amount of players is chosen...something like
+// for loop or foreach user input { let cardsi = new Array(); }
 // papa's cards
 
 let cardsp = new Array();
@@ -762,6 +765,12 @@ function modifybText() {
 
 // functions to change white cards content
 // papa's cards
+// function modifyText(id, i) {
+  // const w = document.getElementById("id");
+  // let rand = getRandomInt(0,120);
+  // let hand = cardsi[a];
+  // w.firstChild.nodeValue = hand;
+// }
 
 function modifyp1Text() {
   const w = document.getElementById("p1");
