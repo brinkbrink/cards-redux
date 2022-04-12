@@ -1022,48 +1022,32 @@ document.getElementById("p7").addEventListener("click", function(){ modifyText("
 document.getElementById("p8").addEventListener("click", function(){ modifyText("p8"); });
 
 // mama's cards
-document.getElementById("m1").addEventListener("click", modifym1Text, false);
-document.getElementById("m2").addEventListener("click", modifym2Text, false);
-document.getElementById("m3").addEventListener("click", modifym3Text, false);
-document.getElementById("m4").addEventListener("click", modifym4Text, false);
-document.getElementById("m5").addEventListener("click", modifym5Text, false);
-document.getElementById("m6").addEventListener("click", modifym6Text, false);
-document.getElementById("m7").addEventListener("click", modifym7Text, false);
-document.getElementById("m8").addEventListener("click", modifym8Text, false);
+document.getElementById("m1").addEventListener("click", function(){ modifyText("m1"); });
+document.getElementById("m2").addEventListener("click", function(){ modifyText("m2"); });
+document.getElementById("m3").addEventListener("click", function(){ modifyText("m3"); });
+document.getElementById("m4").addEventListener("click", function(){ modifyText("m4"); });
+document.getElementById("m5").addEventListener("click", function(){ modifyText("m5"); });
+document.getElementById("m6").addEventListener("click", function(){ modifyText("m6"); });
+document.getElementById("m7").addEventListener("click", function(){ modifyText("m7"); });
+document.getElementById("m8").addEventListener("click", function(){ modifyText("m8"); });
 
 // em's cards
-const ecard1 = document.getElementById("e1");
-ecard1.addEventListener("click", modifye1Text, false);
-const ecard2 = document.getElementById("e2");
-ecard2.addEventListener("click", modifye2Text, false);
-const ecard3 = document.getElementById("e3");
-ecard3.addEventListener("click", modifye3Text, false);
-const ecard4 = document.getElementById("e4");
-ecard4.addEventListener("click", modifye4Text, false);
-const ecard5 = document.getElementById("e5");
-ecard5.addEventListener("click", modifye5Text, false);
-const ecard6 = document.getElementById("e6");
-ecard6.addEventListener("click", modifye6Text, false);
-const ecard7 = document.getElementById("e7");
-ecard7.addEventListener("click", modifye7Text, false);
-const ecard8 = document.getElementById("e8");
-ecard8.addEventListener("click", modifye8Text, false);
+document.getElementById("e1").addEventListener("click", function(){ modifyText("e1"); });
+document.getElementById("e2").addEventListener("click", function(){ modifyText("e2"); });
+document.getElementById("e3").addEventListener("click", function(){ modifyText("e3"); });
+document.getElementById("e4").addEventListener("click", function(){ modifyText("e4"); });
+document.getElementById("e5").addEventListener("click", function(){ modifyText("e5"); });
+document.getElementById("e6").addEventListener("click", function(){ modifyText("e6"); });
+document.getElementById("e7").addEventListener("click", function(){ modifyText("e7"); });
+document.getElementById("e8").addEventListener("click", function(){ modifyText("e8"); });
 
 // v's cards
 
-const vcard1 = document.getElementById("v1");
-vcard1.addEventListener("click", modifyv1Text, false);
-const vcard2 = document.getElementById("v2");
-vcard2.addEventListener("click", modifyv2Text, false);
-const vcard3 = document.getElementById("v3");
-vcard3.addEventListener("click", modifyv3Text, false);
-const vcard4 = document.getElementById("v4");
-vcard4.addEventListener("click", modifyv4Text, false);
-const vcard5 = document.getElementById("v5");
-vcard5.addEventListener("click", modifyv5Text, false);
-const vcard6 = document.getElementById("v6");
-vcard6.addEventListener("click", modifyv6Text, false);
-const vcard7 = document.getElementById("v7");
-vcard7.addEventListener("click", modifyv7Text, false);
-const vcard8 = document.getElementById("v8");
-vcard8.addEventListener("click", modifyv8Text, false);
+document.getElementById("v1").addEventListener("click", function(){ modifyText("v1"); });
+document.getElementById("v2").addEventListener("click", function(){ modifyText("v2"); });
+document.getElementById("v3").addEventListener("click", function(){ modifyText("v3"); });
+document.getElementById("v4").addEventListener("click", function(){ modifyText("v4"); });
+document.getElementById("v5").addEventListener("click", function(){ modifyText("v5"); });
+document.getElementById("v6").addEventListener("click", function(){ modifyText("v6"); });
+document.getElementById("v7").addEventListener("click", function(){ modifyText("v7"); });
+document.getElementById("v8").addEventListener("click", function(){ modifyText("v8"); });
