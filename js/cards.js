@@ -774,14 +774,27 @@ function modifybText() {
   // w.firstChild.nodeValue = hand;
 // }
 
-function modifyText(id){
+// const randHand = () => {
+//   return \`${}`
+// }
+
+// const modifyText = (id) => {
+//   return \
+// }
+
+(param1, paramN) => {
+  let a = 1;
+  return a + param1 + paramN;
+}
+
+let modifyText = id => {
   const w = document.getElementById(id);
   let rand = getRandomInt(0,120);
   let hand = cardsp[rand];
-  w.firstChild.nodeValue = rand;
+  w.firstChild.nodeValue = hand;
 }
 
-document.getElementById("p1").addEventListener("click", modifyText("p1"));
+// document.getElementById("p1").addEventListener("click", modifyText("p1"));
 // const pcard1 = document.getElementById("p1");
 // pcard1.addEventListener("click", modifyText("p1"), false);
 
@@ -802,13 +815,7 @@ document.getElementById("p1").addEventListener("click", modifyText("p1"));
 //   let b = cardsp[a];
 //   w.firstChild.nodeValue = b;
 // }
-// function modifyp1Text() {
-//   const w = document.getElementById("p1");
-//   let a = getRandomInt(0,120);
-//   let b = cardsp[a];
-//   w.firstChild.nodeValue = b;
-// }
-function modifyp2Text() {
+let modifyp2Text = () => {
   const w = document.getElementById("p2");
   let a = getRandomInt(0,120);
   let b = cardsp[a];
@@ -1000,19 +1007,19 @@ function  modifyv8Text() {
 }
 
 // Add event listeners--figure out a way to make this more efficient??
-const sel = document.getElementById("sel");
-sel.addEventListener("click", modifybText, false);
+
+// function addEventListeners
+// function addPlayerEvent
 
 // // papa's cards
-// const pcard1 = document.getElementById("p1");
-// pcard1.addEventListener("click", modifyp1Text, false);
-document.getElementById("p2").addEventListener("click", modifyp2Text);
-document.getElementById("p3").addEventListener("click", modifyp3Text, false);
-document.getElementById("p4").addEventListener("click", modifyp4Text, false);
-document.getElementById("p5").addEventListener("click", modifyp5Text, false);
-document.getElementById("p6").addEventListener("click", modifyp6Text, false);
-document.getElementById("p7").addEventListener("click", modifyp7Text, false);
-document.getElementById("p8").addEventListener("click", modifyp8Text, false);
+document.getElementById("p1").addEventListener("click", function(){ modifyText("p1"); });
+document.getElementById("p2").addEventListener("click", function(){ modifyText("p2"); });
+document.getElementById("p3").addEventListener("click", function(){ modifyText("p3"); });
+document.getElementById("p4").addEventListener("click", function(){ modifyText("p4"); });
+document.getElementById("p5").addEventListener("click", function(){ modifyText("p5"); });
+document.getElementById("p6").addEventListener("click", function(){ modifyText("p6"); });
+document.getElementById("p7").addEventListener("click", function(){ modifyText("p7"); });
+document.getElementById("p8").addEventListener("click", function(){ modifyText("p8"); });
 
 // mama's cards
 document.getElementById("m1").addEventListener("click", modifym1Text, false);
