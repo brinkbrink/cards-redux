@@ -29,6 +29,7 @@ function getRandomInt(min, max) {
 // for loop or foreach user input { let cardsi = new Array(); }
 // papa's cards
 
+
 let cardsp = new Array();
 
 cardsp[0] = 'Silence.';
@@ -773,6 +774,16 @@ function modifybText() {
   // w.firstChild.nodeValue = hand;
 // }
 
+function modifyText(id){
+  const w = document.getElementById(id);
+  w.firstChild.nodeValue = "whatever";
+}
+
+const pcard1 = document.getElementById("p1");
+pcard1.addEventListener("click", modifyText("p1"), false);
+
+
+
 // papa's cards
 function modifyp1Text() {
   const w = document.getElementById("p1");
@@ -989,9 +1000,9 @@ function  modifyv8Text() {
 const sel = document.getElementById("sel");
 sel.addEventListener("click", modifybText, false);
 
-// papa's cards
-const pcard1 = document.getElementById("p1");
-pcard1.addEventListener("click", modifyp1Text, false);
+// // papa's cards
+// const pcard1 = document.getElementById("p1");
+// pcard1.addEventListener("click", modifyp1Text, false);
 const pcard2 = document.getElementById("p2");
 pcard2.addEventListener("click", modifyp2Text, false);
 const pcard3 = document.getElementById("p3");
