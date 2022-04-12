@@ -10,24 +10,19 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
   }
 
-//test
-// document.getElementById("p1").innerHTML = getRandomInt(1,10);
-// document.getElementById("p2").innerHTML = getRandomInt(11,20);
-// document.getElementById("p3").innerHTML = getRandomInt(21,30);
-// document.getElementById("p4").innerHTML = getRandomInt(31,40);
-// document.getElementById("p5").innerHTML = getRandomInt(41,50);
-// document.getElementById("p6").innerHTML = getRandomInt(51,60);
-// document.getElementById("p7").innerHTML = getRandomInt(61,70);
-// document.getElementById("p8").innerHTML = getRandomInt(71,80);
-
-// function assignStatement(int) {
-//     int = getRandomInt(0,20)
-// }
-
+let a = getRandomInt(0,14);
+let b = getRandomInt(15,29);
+let c = getRandomInt(30,44);
+let d = getRandomInt(45,59);
+let e = getRandomInt(60,74);
+let f = getRandomInt(75,89);
+let g = getRandomInt(90,104);
+let h = getRandomInt(105,121);
 
 // create new array for whatever amount of players is chosen...something like
 // for loop or foreach user input { let cardsi = new Array(); }
 // papa's cards
+
 
 
 let cardsp = new Array();
@@ -155,37 +150,19 @@ cardsp[119] = 'Ugly wrapping paper.';
 cardsp[120] = 'Mistletoe.';
 cardsp[121] = 'WILD CARD!! <img alt="panda the cat" src="images/panda.jpg">';
 
-let ps = getRandomInt(0,14);
-let pt = getRandomInt(15,29);
-let pu = getRandomInt(30,44);
-let pv = getRandomInt(45,59);
-let pw = getRandomInt(60,74);
-let px = getRandomInt(75,89);
-let py = getRandomInt(90,104);
-let pz = getRandomInt(105,121);
+
 
 // add if statements to disallow repeat cards
 
-//add loop for each assignment below
-// let a = cards[x];
-let p1 = cardsp[ps];
-let p2 = cardsp[pt];
-let p3 = cardsp[pu];
-let p4 = cardsp[pv];
-let p5 = cardsp[pw];
-let p6 = cardsp[px];
-let p7 = cardsp[py];
-let p8 = cardsp[pz];
-
 // add loop for each hand
-document.getElementById("p1").innerHTML = p1;
-document.getElementById("p2").innerHTML = p2;
-document.getElementById("p3").innerHTML = p3;
-document.getElementById("p4").innerHTML = p4;
-document.getElementById("p5").innerHTML = p5;
-document.getElementById("p6").innerHTML = p6;
-document.getElementById("p7").innerHTML = p7;
-document.getElementById("p8").innerHTML = p8;
+document.getElementById("p1").innerHTML = cardsp[a];
+document.getElementById("p2").innerHTML = cardsp[b];
+document.getElementById("p3").innerHTML = cardsp[c];
+document.getElementById("p4").innerHTML = cardsp[d];
+document.getElementById("p5").innerHTML = cardsp[e];
+document.getElementById("p6").innerHTML = cardsp[f];
+document.getElementById("p7").innerHTML = cardsp[g];
+document.getElementById("p8").innerHTML = cardsp[h];
 
 
 // mom's cards
@@ -312,42 +289,17 @@ cardsm[118] = 'Smoking legal weed in Colorado.';
 cardsm[119] = 'Clementine segments.';
 cardsm[120] = 'Lavendar growing on the Olympic Peninsula.';
 
-// let cards = [
-// 'Apple', 
-// 'ddd',
-// 'dklj'
-// ];
-
-let ms = getRandomInt(0,14);
-let mt = getRandomInt(15,29);
-let mu = getRandomInt(30,44);
-let mv = getRandomInt(45,59);
-let mw = getRandomInt(60,74);
-let mx = getRandomInt(75,89);
-let my = getRandomInt(90,104);
-let mz = getRandomInt(105,120);
-
 // add if statements to disallow repeat cards
 
-// add loop for each assignment below
-let m1 = cardsm[ms];
-let m2 = cardsm[mt];
-let m3 = cardsm[mu];
-let m4 = cardsm[mv];
-let m5 = cardsm[mw];
-let m6 = cardsm[mx];
-let m7 = cardsm[my];
-let m8 = cardsm[mz];
-
 // add loop for each hand
-document.getElementById("m1").innerHTML = m1;
-document.getElementById("m2").innerHTML = m2;
-document.getElementById("m3").innerHTML = m3;
-document.getElementById("m4").innerHTML = m4;
-document.getElementById("m5").innerHTML = m5;
-document.getElementById("m6").innerHTML = m6;
-document.getElementById("m7").innerHTML = m7;
-document.getElementById("m8").innerHTML = m8;
+document.getElementById("m1").innerHTML = cardsm[a];
+document.getElementById("m2").innerHTML = cardsm[b];
+document.getElementById("m3").innerHTML = cardsm[c];
+document.getElementById("m4").innerHTML = cardsm[d];
+document.getElementById("m5").innerHTML = cardsm[e];
+document.getElementById("m6").innerHTML = cardsm[f];
+document.getElementById("m7").innerHTML = cardsm[g];
+document.getElementById("m8").innerHTML = cardsm[h];
 
 // em's cards
 
@@ -474,38 +426,17 @@ cardse[118] = 'Oktoberfest.';
 cardse[119] = 'Yakima hops.';
 cardse[120] = 'Eastern European history.';
 
-// the following makes the card's readings random
-
-let es = getRandomInt(0,14);
-let et = getRandomInt(15,29);
-let eu = getRandomInt(30,44);
-let ev = getRandomInt(45,59);
-let ew = getRandomInt(60,74);
-let ex = getRandomInt(75,89);
-let ey = getRandomInt(90,104);
-let ez = getRandomInt(105,120);
-
 // add if statements to disallow repeat cards
 
-// add loop for each assignment below
-let e1 = cardse[es];
-let e2 = cardse[et];
-let e3 = cardse[eu];
-let e4 = cardse[ev];
-let e5 = cardse[ew];
-let e6 = cardse[ex];
-let e7 = cardse[ey];
-let e8 = cardse[ez];
-
 // add loop for each hand
-document.getElementById("e1").innerHTML = e1;
-document.getElementById("e2").innerHTML = e2;
-document.getElementById("e3").innerHTML = e3;
-document.getElementById("e4").innerHTML = e4;
-document.getElementById("e5").innerHTML = e5;
-document.getElementById("e6").innerHTML = e6;
-document.getElementById("e7").innerHTML = e7;
-document.getElementById("e8").innerHTML = e8;
+document.getElementById("e1").innerHTML = cardse[a];
+document.getElementById("e2").innerHTML = cardse[b];
+document.getElementById("e3").innerHTML = cardse[c];
+document.getElementById("e4").innerHTML = cardse[d];
+document.getElementById("e5").innerHTML = cardse[e];
+document.getElementById("e6").innerHTML = cardse[f];
+document.getElementById("e7").innerHTML = cardse[g];
+document.getElementById("e8").innerHTML = cardse[h];
 
 // v's cards
 
@@ -623,7 +554,7 @@ cardsv[108] = 'The screams... the terrible screams.';
 cardsv[109] = 'Men.';
 cardsv[110] = 'Giggling like an anime girl.';
 cardsv[111] = 'Airing of Grievances.';
-cardsv[112] = ' Feats of Strength.';
+cardsv[112] = 'Feats of Strength.';
 cardsv[113] = 'Festivus miracles.';
 cardsv[114] = 'Poison mimosas.';
 cardsv[115] = 'Poinsetta.';
@@ -633,40 +564,19 @@ cardsv[118] = 'The Beach Boys.';
 cardsv[119] = 'Rare Exports.';
 cardsv[120] = 'The Santa Clause 2.';
 
-// the following makes the card's readings random
-
-let vs = getRandomInt(0,14);
-let vt = getRandomInt(15,29);
-let vu = getRandomInt(30,44);
-let vv = getRandomInt(45,59);
-let vw = getRandomInt(60,74);
-let vx = getRandomInt(75,89);
-let vy = getRandomInt(90,104);
-let vz = getRandomInt(105,120);
-
 // add if statements to disallow repeat cards
 
-// add loop for each assignment below
-let v1 = cardse[vs];
-let v2 = cardse[vt];
-let v3 = cardse[vu];
-let v4 = cardse[vv];
-let v5 = cardse[vw];
-let v6 = cardse[vx];
-let v7 = cardse[vy];
-let v8 = cardse[vz];
-
 // add loop for each hand
-document.getElementById("v1").innerHTML = v1;
-document.getElementById("v2").innerHTML = v2;
-document.getElementById("v3").innerHTML = v3;
-document.getElementById("v4").innerHTML = v4;
-document.getElementById("v5").innerHTML = v5;
-document.getElementById("v6").innerHTML = v6;
-document.getElementById("v7").innerHTML = v7;
-document.getElementById("v8").innerHTML = v8;
+document.getElementById("v1").innerHTML = cardsv[a];
+document.getElementById("v2").innerHTML = cardsv[b];
+document.getElementById("v3").innerHTML = cardsv[c];
+document.getElementById("v4").innerHTML = cardsv[d];
+document.getElementById("v5").innerHTML = cardsv[e];
+document.getElementById("v6").innerHTML = cardsv[f];
+document.getElementById("v7").innerHTML = cardsv[g];
+document.getElementById("v8").innerHTML = cardsv[h];
 
-// for the white card
+// for the black card
 let cards = new Array();
 
 cards[0] = 'Hey Reddit! I am __________. Ask me anything.';
@@ -790,16 +700,14 @@ cards[118] = 'The new hosts for American Idol are Kelly Clarkson, ________ and _
 cards[119] = 'I heard the next stimulus package will just be _________.'
 cards[120] = 'Is this the end or is it just _________?'
 
-// functions to change card content
+let bs = getRandomInt(0,120);
+document.getElementById("black").innerHTML = cards[bs];
 
+// functions to change card content
 
 // let randHand = () => {
 //  return hand;
 // }
-
-// let modifyText = (id) => {
-// }
-
 
 let modifyText = (id, array) => {
   const w = document.getElementById(id);
@@ -808,19 +716,14 @@ let modifyText = (id, array) => {
   w.firstChild.nodeValue = hand;
 }
 
-// papa's cards
-// function modifyp1Text() {
-//   const w = document.getElementById("p1");
-//   let a = getRandomInt(0,120);
-//   // should probably be its own function
 //   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-//   // used.push(a);
-//   //if(a is not in used[]){
+//   // 
+//   //if used.has(a)==false{
 //   //   let b = cardsp[a];
+//        used.push(a);
 //   // } else {
 //   //   repeat??
 //   // }
-//   let b = cardsp[a];
 //   w.firstChild.nodeValue = b;
 // }
 
@@ -863,7 +766,6 @@ document.getElementById("e7").addEventListener("click", function(){ modifyText("
 document.getElementById("e8").addEventListener("click", function(){ modifyText("e8", cardse); });
 
 // v's cards
-
 document.getElementById("v1").addEventListener("click", function(){ modifyText("v1", cardsv); });
 document.getElementById("v2").addEventListener("click", function(){ modifyText("v2", cardsv); });
 document.getElementById("v3").addEventListener("click", function(){ modifyText("v3", cardsv); });
