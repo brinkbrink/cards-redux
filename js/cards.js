@@ -770,41 +770,44 @@ function modifybText() {
 // function modifyText(id, i) {
   // const w = document.getElementById("id");
   // let rand = getRandomInt(0,120);
-  // let hand = cardsi[a];
+  // let hand = cardsi[rand];
   // w.firstChild.nodeValue = hand;
 // }
 
 function modifyText(id){
   const w = document.getElementById(id);
-  w.firstChild.nodeValue = "whatever";
+  let rand = getRandomInt(0,120);
+  let hand = cardsp[rand];
+  w.firstChild.nodeValue = rand;
 }
 
-const pcard1 = document.getElementById("p1");
-pcard1.addEventListener("click", modifyText("p1"), false);
+document.getElementById("p1").addEventListener("click", modifyText("p1"));
+// const pcard1 = document.getElementById("p1");
+// pcard1.addEventListener("click", modifyText("p1"), false);
 
 
 
 // papa's cards
-function modifyp1Text() {
-  const w = document.getElementById("p1");
-  let a = getRandomInt(0,120);
-  // should probably be its own function
-  // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-  // used.push(a);
-  //if(a is not in used[]){
-  //   let b = cardsp[a];
-  // } else {
-  //   repeat??
-  // }
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp1Text() {
-  const w = document.getElementById("p1");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
+// function modifyp1Text() {
+//   const w = document.getElementById("p1");
+//   let a = getRandomInt(0,120);
+//   // should probably be its own function
+//   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
+//   // used.push(a);
+//   //if(a is not in used[]){
+//   //   let b = cardsp[a];
+//   // } else {
+//   //   repeat??
+//   // }
+//   let b = cardsp[a];
+//   w.firstChild.nodeValue = b;
+// }
+// function modifyp1Text() {
+//   const w = document.getElementById("p1");
+//   let a = getRandomInt(0,120);
+//   let b = cardsp[a];
+//   w.firstChild.nodeValue = b;
+// }
 function modifyp2Text() {
   const w = document.getElementById("p2");
   let a = getRandomInt(0,120);
@@ -1003,38 +1006,23 @@ sel.addEventListener("click", modifybText, false);
 // // papa's cards
 // const pcard1 = document.getElementById("p1");
 // pcard1.addEventListener("click", modifyp1Text, false);
-const pcard2 = document.getElementById("p2");
-pcard2.addEventListener("click", modifyp2Text, false);
-const pcard3 = document.getElementById("p3");
-pcard3.addEventListener("click", modifyp3Text, false);
-const pcard4 = document.getElementById("p4");
-pcard4.addEventListener("click", modifyp4Text, false);
-const pcard5 = document.getElementById("p5");
-pcard5.addEventListener("click", modifyp5Text, false);
-const pcard6 = document.getElementById("p6");
-pcard6.addEventListener("click", modifyp6Text, false);
-const pcard7 = document.getElementById("p7");
-pcard7.addEventListener("click", modifyp7Text, false);
-const pcard8 = document.getElementById("p8");
-pcard8.addEventListener("click", modifyp8Text, false);
+document.getElementById("p2").addEventListener("click", modifyp2Text);
+document.getElementById("p3").addEventListener("click", modifyp3Text, false);
+document.getElementById("p4").addEventListener("click", modifyp4Text, false);
+document.getElementById("p5").addEventListener("click", modifyp5Text, false);
+document.getElementById("p6").addEventListener("click", modifyp6Text, false);
+document.getElementById("p7").addEventListener("click", modifyp7Text, false);
+document.getElementById("p8").addEventListener("click", modifyp8Text, false);
 
 // mama's cards
-const mcard1 = document.getElementById("m1");
-mcard1.addEventListener("click", modifym1Text, false);
-const mcard2 = document.getElementById("m2");
-mcard2.addEventListener("click", modifym2Text, false);
-const mcard3 = document.getElementById("m3");
-mcard3.addEventListener("click", modifym3Text, false);
-const mcard4 = document.getElementById("m4");
-mcard4.addEventListener("click", modifym4Text, false);
-const mcard5 = document.getElementById("m5");
-mcard5.addEventListener("click", modifym5Text, false);
-const mcard6 = document.getElementById("m6");
-mcard6.addEventListener("click", modifym6Text, false);
-const mcard7 = document.getElementById("m7");
-mcard7.addEventListener("click", modifym7Text, false);
-const mcard8 = document.getElementById("m8");
-mcard8.addEventListener("click", modifym8Text, false);
+document.getElementById("m1").addEventListener("click", modifym1Text, false);
+document.getElementById("m2").addEventListener("click", modifym2Text, false);
+document.getElementById("m3").addEventListener("click", modifym3Text, false);
+document.getElementById("m4").addEventListener("click", modifym4Text, false);
+document.getElementById("m5").addEventListener("click", modifym5Text, false);
+document.getElementById("m6").addEventListener("click", modifym6Text, false);
+document.getElementById("m7").addEventListener("click", modifym7Text, false);
+document.getElementById("m8").addEventListener("click", modifym8Text, false);
 
 // em's cards
 const ecard1 = document.getElementById("e1");
