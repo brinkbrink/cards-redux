@@ -57,7 +57,7 @@ label {
     color: #000;
     box-sizing: border-box;
     margin: 5px;
-    padding: 30px;
+    padding: 1em;
     font-size: 1.5em;
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -71,8 +71,9 @@ label {
     box-sizing: border-box;
     margin: auto;
     width: 30%;
-    padding: 20px;
-    font-size: 31px;
+    height: 17em;
+    padding: 1em;
+    font-size: 2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
