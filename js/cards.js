@@ -750,29 +750,48 @@ cards[77] = 'My tweet about _________________ got 100,000 retweets!';
 cards[78] = 'March _________ bring April _______';
 cards[79] = 'I I\'m sorry, Professor, but I couldn\'t complete my homework because ofsaw _________ kissing Santa Claus.';
 cards[80] = 'In line with our predictions, we find a robust correlation between _________ and __________ (p>.05).';
+cards[81] = 'I woke up to the _________ smell of ___________.';
+cards[82] = 'I left my ______ in San Francisco!';
+cards[83] = 'I\'d rather be _________.';
+cards[84] = 'Old enough to _________ but young enough to ___________';
+cards[85] = 'Praying away the gay didn\'t work so instead I tried ______...and that didn\'t work either';
+cards[86] = 'I\'m. Too sexy for my _______. I\'m too sexy for my _______. So sexy it hurts.';
+cards[87] = 'Have you heard about the viral _______ challenge sweeping the internet?';
+cards[88] = '________ in the hand is worth _________';
+cards[89] = '_________, the new fragrance from Calvin Klein.';
+cards[90] = '__________, the other other white meat.';
+cards[91] = 'Indiana Jones and the Temple of _________.';
+cards[92] = 'The latest reality show pits ________ against ________.';
+cards[93] = 'Honey, I shrunk the ________.';
+cards[94] = 'I can\'t believe it\'s not butter!';
+cards[95] = 'I knew I shouldn\'t have dressed up as ________ for Halloween.';
+cards[96] = 'I\'ll take _______ for $1000, Alex.';
+cards[97] = 'I\'m on a quest to save the world from ________.';
+cards[98] = 'It was all fun and games until __________.';
+cards[99] = 'Look, ma! No ________.';
+cards[101] = 'New from Ben & Jerry\'s: ____________';
+cards[102] = 'One _______ to rule them all!';
+cards[103] = 'Parents, it\'s never too late to talk to your kids about the dangers of ________.';
+cards[104] = 'Recent legislation from Congress states that _______ is now being considered a vegetable.';
+cards[105] = 'The best part of waking up is ________ in your cup.';
+cards[106] = 'The First Lady is starting a new campaign called “The War on ________.”';
+cards[107] = 'There\'s always money in ________.';
+cards[108] = 'What time is it? It\'s ______ time!';
+cards[109] = 'Where we\'re going, we don\'t need _______.';
+cards[110] = 'Who ya gonna call?';
+cards[111] = 'What\'s the new fad diet?';
+cards[112] = 'Seasonal _______ Disorder';
+cards[113] = 'What\'s the next superhero/sidekick duo?';
+cards[114] = 'I\'m going on a cleanse this week. Nothing but kale juice and _______.';
+cards[115] = 'Do NOT go here! Found _______ in my Kung Pao chicken!';
+cards[116] = 'When ________ cry.';
+cards[117] = 'Baby names are getting even weirder...my cousin named their kid _______.';
+cards[118] = 'The new hosts for American Idol are Kelly Clarkson, ________ and _______?!'
+cards[119] = 'I heard the next stimulus package will just be _________.'
+cards[120] = 'Is this the end or is it just _________?'
 
-let a = getRandomInt(0,80);
-let b = cards[a];
-document.getElementById("black").innerHTML = b;
+// functions to change card content
 
-
-// to change black card content on click
-function modifybText() {
-  const w = document.getElementById("black");
-  let a = getRandomInt(0,80);
-  let b = cards[a];
-  w.firstChild.nodeValue = b;
-}
-
-// functions to change white cards content
-
-// possible generic
-// function modifyText(id, i) {
-  // const w = document.getElementById("id");
-  // let rand = getRandomInt(0,120);
-  // let hand = cardsi[rand];
-  // w.firstChild.nodeValue = hand;
-// }
 
 // let randHand = () => {
 //  return hand;
@@ -810,7 +829,10 @@ let modifyText = (id, array) => {
 // function addEventListeners
 // function addPlayerEvent
 
-// // papa's cards
+// black card
+document.getElementById("black").addEventListener("click", function(){ modifyText("black", cards); });
+
+// papa's cards
 document.getElementById("p1").addEventListener("click", function(){ modifyText("p1", cardsp); });
 document.getElementById("p2").addEventListener("click", function(){ modifyText("p2", cardsp); });
 document.getElementById("p3").addEventListener("click", function(){ modifyText("p3", cardsp); });
