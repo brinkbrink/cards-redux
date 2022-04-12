@@ -782,10 +782,10 @@ function modifybText() {
 // }
 
 
-let modifyText = id => {
+let modifyText = (id, array) => {
   const w = document.getElementById(id);
   let rand = getRandomInt(0,120);
-  let hand = cardsp[rand];
+  let hand = array[rand];
   w.firstChild.nodeValue = hand;
 }
 
@@ -805,48 +805,48 @@ let modifyText = id => {
 //   w.firstChild.nodeValue = b;
 // }
 
-// Add event listeners--figure out a way to make this more efficient??
+// Add event listeners--figure out a way to make this more efficient?? and producable regardless of players
 
 // function addEventListeners
 // function addPlayerEvent
 
 // // papa's cards
-document.getElementById("p1").addEventListener("click", function(){ modifyText("p1"); });
-document.getElementById("p2").addEventListener("click", function(){ modifyText("p2"); });
-document.getElementById("p3").addEventListener("click", function(){ modifyText("p3"); });
-document.getElementById("p4").addEventListener("click", function(){ modifyText("p4"); });
-document.getElementById("p5").addEventListener("click", function(){ modifyText("p5"); });
-document.getElementById("p6").addEventListener("click", function(){ modifyText("p6"); });
-document.getElementById("p7").addEventListener("click", function(){ modifyText("p7"); });
-document.getElementById("p8").addEventListener("click", function(){ modifyText("p8"); });
+document.getElementById("p1").addEventListener("click", function(){ modifyText("p1", cardsp); });
+document.getElementById("p2").addEventListener("click", function(){ modifyText("p2", cardsp); });
+document.getElementById("p3").addEventListener("click", function(){ modifyText("p3", cardsp); });
+document.getElementById("p4").addEventListener("click", function(){ modifyText("p4", cardsp); });
+document.getElementById("p5").addEventListener("click", function(){ modifyText("p5", cardsp); });
+document.getElementById("p6").addEventListener("click", function(){ modifyText("p6", cardsp); });
+document.getElementById("p7").addEventListener("click", function(){ modifyText("p7", cardsp); });
+document.getElementById("p8").addEventListener("click", function(){ modifyText("p8", cardsp); });
 
 // mama's cards
-document.getElementById("m1").addEventListener("click", function(){ modifyText("m1"); });
-document.getElementById("m2").addEventListener("click", function(){ modifyText("m2"); });
-document.getElementById("m3").addEventListener("click", function(){ modifyText("m3"); });
-document.getElementById("m4").addEventListener("click", function(){ modifyText("m4"); });
-document.getElementById("m5").addEventListener("click", function(){ modifyText("m5"); });
-document.getElementById("m6").addEventListener("click", function(){ modifyText("m6"); });
-document.getElementById("m7").addEventListener("click", function(){ modifyText("m7"); });
-document.getElementById("m8").addEventListener("click", function(){ modifyText("m8"); });
+document.getElementById("m1").addEventListener("click", function(){ modifyText("m1", cardsm); });
+document.getElementById("m2").addEventListener("click", function(){ modifyText("m2", cardsm); });
+document.getElementById("m3").addEventListener("click", function(){ modifyText("m3", cardsm); });
+document.getElementById("m4").addEventListener("click", function(){ modifyText("m4", cardsm); });
+document.getElementById("m5").addEventListener("click", function(){ modifyText("m5", cardsm); });
+document.getElementById("m6").addEventListener("click", function(){ modifyText("m6", cardsm); });
+document.getElementById("m7").addEventListener("click", function(){ modifyText("m7", cardsm); });
+document.getElementById("m8").addEventListener("click", function(){ modifyText("m8", cardsm); });
 
 // em's cards
-document.getElementById("e1").addEventListener("click", function(){ modifyText("e1"); });
-document.getElementById("e2").addEventListener("click", function(){ modifyText("e2"); });
-document.getElementById("e3").addEventListener("click", function(){ modifyText("e3"); });
-document.getElementById("e4").addEventListener("click", function(){ modifyText("e4"); });
-document.getElementById("e5").addEventListener("click", function(){ modifyText("e5"); });
-document.getElementById("e6").addEventListener("click", function(){ modifyText("e6"); });
-document.getElementById("e7").addEventListener("click", function(){ modifyText("e7"); });
-document.getElementById("e8").addEventListener("click", function(){ modifyText("e8"); });
+document.getElementById("e1").addEventListener("click", function(){ modifyText("e1", cardse); });
+document.getElementById("e2").addEventListener("click", function(){ modifyText("e2", cardse); });
+document.getElementById("e3").addEventListener("click", function(){ modifyText("e3", cardse); });
+document.getElementById("e4").addEventListener("click", function(){ modifyText("e4", cardse); });
+document.getElementById("e5").addEventListener("click", function(){ modifyText("e5", cardse); });
+document.getElementById("e6").addEventListener("click", function(){ modifyText("e6", cardse); });
+document.getElementById("e7").addEventListener("click", function(){ modifyText("e7", cardse); });
+document.getElementById("e8").addEventListener("click", function(){ modifyText("e8", cardse); });
 
 // v's cards
 
-document.getElementById("v1").addEventListener("click", function(){ modifyText("v1"); });
-document.getElementById("v2").addEventListener("click", function(){ modifyText("v2"); });
-document.getElementById("v3").addEventListener("click", function(){ modifyText("v3"); });
-document.getElementById("v4").addEventListener("click", function(){ modifyText("v4"); });
-document.getElementById("v5").addEventListener("click", function(){ modifyText("v5"); });
-document.getElementById("v6").addEventListener("click", function(){ modifyText("v6"); });
-document.getElementById("v7").addEventListener("click", function(){ modifyText("v7"); });
-document.getElementById("v8").addEventListener("click", function(){ modifyText("v8"); });
+document.getElementById("v1").addEventListener("click", function(){ modifyText("v1", cardsv); });
+document.getElementById("v2").addEventListener("click", function(){ modifyText("v2", cardsv); });
+document.getElementById("v3").addEventListener("click", function(){ modifyText("v3", cardsv); });
+document.getElementById("v4").addEventListener("click", function(){ modifyText("v4", cardsv); });
+document.getElementById("v5").addEventListener("click", function(){ modifyText("v5", cardsv); });
+document.getElementById("v6").addEventListener("click", function(){ modifyText("v6", cardsv); });
+document.getElementById("v7").addEventListener("click", function(){ modifyText("v7", cardsv); });
+document.getElementById("v8").addEventListener("click", function(){ modifyText("v8", cardsv); });
