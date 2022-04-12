@@ -29,6 +29,7 @@ function getRandomInt(min, max) {
 // for loop or foreach user input { let cardsi = new Array(); }
 // papa's cards
 
+
 let cardsp = new Array();
 
 cardsp[0] = 'Silence.';
@@ -769,32 +770,52 @@ function modifybText() {
 // function modifyText(id, i) {
   // const w = document.getElementById("id");
   // let rand = getRandomInt(0,120);
-  // let hand = cardsi[a];
+  // let hand = cardsi[rand];
   // w.firstChild.nodeValue = hand;
 // }
 
+// const randHand = () => {
+//   return \`${}`
+// }
+
+// const modifyText = (id) => {
+//   return \
+// }
+
+(param1, paramN) => {
+  let a = 1;
+  return a + param1 + paramN;
+}
+
+let modifyText = id => {
+  const w = document.getElementById(id);
+  let rand = getRandomInt(0,120);
+  let hand = cardsp[rand];
+  w.firstChild.nodeValue = hand;
+}
+
+// document.getElementById("p1").addEventListener("click", modifyText("p1"));
+// const pcard1 = document.getElementById("p1");
+// pcard1.addEventListener("click", modifyText("p1"), false);
+
+
+
 // papa's cards
-function modifyp1Text() {
-  const w = document.getElementById("p1");
-  let a = getRandomInt(0,120);
-  // should probably be its own function
-  // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-  // used.push(a);
-  //if(a is not in used[]){
-  //   let b = cardsp[a];
-  // } else {
-  //   repeat??
-  // }
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp1Text() {
-  const w = document.getElementById("p1");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp2Text() {
+// function modifyp1Text() {
+//   const w = document.getElementById("p1");
+//   let a = getRandomInt(0,120);
+//   // should probably be its own function
+//   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
+//   // used.push(a);
+//   //if(a is not in used[]){
+//   //   let b = cardsp[a];
+//   // } else {
+//   //   repeat??
+//   // }
+//   let b = cardsp[a];
+//   w.firstChild.nodeValue = b;
+// }
+let modifyp2Text = () => {
   const w = document.getElementById("p2");
   let a = getRandomInt(0,120);
   let b = cardsp[a];
@@ -986,78 +1007,47 @@ function  modifyv8Text() {
 }
 
 // Add event listeners--figure out a way to make this more efficient??
-const sel = document.getElementById("sel");
-sel.addEventListener("click", modifybText, false);
 
-// papa's cards
-const pcard1 = document.getElementById("p1");
-pcard1.addEventListener("click", modifyp1Text, false);
-const pcard2 = document.getElementById("p2");
-pcard2.addEventListener("click", modifyp2Text, false);
-const pcard3 = document.getElementById("p3");
-pcard3.addEventListener("click", modifyp3Text, false);
-const pcard4 = document.getElementById("p4");
-pcard4.addEventListener("click", modifyp4Text, false);
-const pcard5 = document.getElementById("p5");
-pcard5.addEventListener("click", modifyp5Text, false);
-const pcard6 = document.getElementById("p6");
-pcard6.addEventListener("click", modifyp6Text, false);
-const pcard7 = document.getElementById("p7");
-pcard7.addEventListener("click", modifyp7Text, false);
-const pcard8 = document.getElementById("p8");
-pcard8.addEventListener("click", modifyp8Text, false);
+// function addEventListeners
+// function addPlayerEvent
+
+// // papa's cards
+document.getElementById("p1").addEventListener("click", function(){ modifyText("p1"); });
+document.getElementById("p2").addEventListener("click", function(){ modifyText("p2"); });
+document.getElementById("p3").addEventListener("click", function(){ modifyText("p3"); });
+document.getElementById("p4").addEventListener("click", function(){ modifyText("p4"); });
+document.getElementById("p5").addEventListener("click", function(){ modifyText("p5"); });
+document.getElementById("p6").addEventListener("click", function(){ modifyText("p6"); });
+document.getElementById("p7").addEventListener("click", function(){ modifyText("p7"); });
+document.getElementById("p8").addEventListener("click", function(){ modifyText("p8"); });
 
 // mama's cards
-const mcard1 = document.getElementById("m1");
-mcard1.addEventListener("click", modifym1Text, false);
-const mcard2 = document.getElementById("m2");
-mcard2.addEventListener("click", modifym2Text, false);
-const mcard3 = document.getElementById("m3");
-mcard3.addEventListener("click", modifym3Text, false);
-const mcard4 = document.getElementById("m4");
-mcard4.addEventListener("click", modifym4Text, false);
-const mcard5 = document.getElementById("m5");
-mcard5.addEventListener("click", modifym5Text, false);
-const mcard6 = document.getElementById("m6");
-mcard6.addEventListener("click", modifym6Text, false);
-const mcard7 = document.getElementById("m7");
-mcard7.addEventListener("click", modifym7Text, false);
-const mcard8 = document.getElementById("m8");
-mcard8.addEventListener("click", modifym8Text, false);
+document.getElementById("m1").addEventListener("click", function(){ modifyText("m1"); });
+document.getElementById("m2").addEventListener("click", function(){ modifyText("m2"); });
+document.getElementById("m3").addEventListener("click", function(){ modifyText("m3"); });
+document.getElementById("m4").addEventListener("click", function(){ modifyText("m4"); });
+document.getElementById("m5").addEventListener("click", function(){ modifyText("m5"); });
+document.getElementById("m6").addEventListener("click", function(){ modifyText("m6"); });
+document.getElementById("m7").addEventListener("click", function(){ modifyText("m7"); });
+document.getElementById("m8").addEventListener("click", function(){ modifyText("m8"); });
 
 // em's cards
-const ecard1 = document.getElementById("e1");
-ecard1.addEventListener("click", modifye1Text, false);
-const ecard2 = document.getElementById("e2");
-ecard2.addEventListener("click", modifye2Text, false);
-const ecard3 = document.getElementById("e3");
-ecard3.addEventListener("click", modifye3Text, false);
-const ecard4 = document.getElementById("e4");
-ecard4.addEventListener("click", modifye4Text, false);
-const ecard5 = document.getElementById("e5");
-ecard5.addEventListener("click", modifye5Text, false);
-const ecard6 = document.getElementById("e6");
-ecard6.addEventListener("click", modifye6Text, false);
-const ecard7 = document.getElementById("e7");
-ecard7.addEventListener("click", modifye7Text, false);
-const ecard8 = document.getElementById("e8");
-ecard8.addEventListener("click", modifye8Text, false);
+document.getElementById("e1").addEventListener("click", function(){ modifyText("e1"); });
+document.getElementById("e2").addEventListener("click", function(){ modifyText("e2"); });
+document.getElementById("e3").addEventListener("click", function(){ modifyText("e3"); });
+document.getElementById("e4").addEventListener("click", function(){ modifyText("e4"); });
+document.getElementById("e5").addEventListener("click", function(){ modifyText("e5"); });
+document.getElementById("e6").addEventListener("click", function(){ modifyText("e6"); });
+document.getElementById("e7").addEventListener("click", function(){ modifyText("e7"); });
+document.getElementById("e8").addEventListener("click", function(){ modifyText("e8"); });
 
 // v's cards
 
-const vcard1 = document.getElementById("v1");
-vcard1.addEventListener("click", modifyv1Text, false);
-const vcard2 = document.getElementById("v2");
-vcard2.addEventListener("click", modifyv2Text, false);
-const vcard3 = document.getElementById("v3");
-vcard3.addEventListener("click", modifyv3Text, false);
-const vcard4 = document.getElementById("v4");
-vcard4.addEventListener("click", modifyv4Text, false);
-const vcard5 = document.getElementById("v5");
-vcard5.addEventListener("click", modifyv5Text, false);
-const vcard6 = document.getElementById("v6");
-vcard6.addEventListener("click", modifyv6Text, false);
-const vcard7 = document.getElementById("v7");
-vcard7.addEventListener("click", modifyv7Text, false);
-const vcard8 = document.getElementById("v8");
-vcard8.addEventListener("click", modifyv8Text, false);
+document.getElementById("v1").addEventListener("click", function(){ modifyText("v1"); });
+document.getElementById("v2").addEventListener("click", function(){ modifyText("v2"); });
+document.getElementById("v3").addEventListener("click", function(){ modifyText("v3"); });
+document.getElementById("v4").addEventListener("click", function(){ modifyText("v4"); });
+document.getElementById("v5").addEventListener("click", function(){ modifyText("v5"); });
+document.getElementById("v6").addEventListener("click", function(){ modifyText("v6"); });
+document.getElementById("v7").addEventListener("click", function(){ modifyText("v7"); });
+document.getElementById("v8").addEventListener("click", function(){ modifyText("v8"); });
