@@ -46,18 +46,19 @@ label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card {
     border-radius: 25px;
-    height: 361px;
-    width: 24%;
+    height: 18em;
+    width: 23%;
     background: #fff;
     color: #000;
     box-sizing: border-box;
     margin: 5px;
-    padding: 20px;
-    font-size: 2em;
+    padding: 30px;
+    font-size: 1.5em;
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
