@@ -774,18 +774,13 @@ function modifybText() {
   // w.firstChild.nodeValue = hand;
 // }
 
-// const randHand = () => {
-//   return \`${}`
+// let randHand = () => {
+//  return hand;
 // }
 
-// const modifyText = (id) => {
-//   return \
+// let modifyText = (id) => {
 // }
 
-(param1, paramN) => {
-  let a = 1;
-  return a + param1 + paramN;
-}
 
 let modifyText = id => {
   const w = document.getElementById(id);
@@ -793,12 +788,6 @@ let modifyText = id => {
   let hand = cardsp[rand];
   w.firstChild.nodeValue = hand;
 }
-
-// document.getElementById("p1").addEventListener("click", modifyText("p1"));
-// const pcard1 = document.getElementById("p1");
-// pcard1.addEventListener("click", modifyText("p1"), false);
-
-
 
 // papa's cards
 // function modifyp1Text() {
@@ -815,196 +804,6 @@ let modifyText = id => {
 //   let b = cardsp[a];
 //   w.firstChild.nodeValue = b;
 // }
-let modifyp2Text = () => {
-  const w = document.getElementById("p2");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp3Text() {
-  const w = document.getElementById("p3");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp4Text() {
-  const w = document.getElementById("p4");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp5Text() {
-  const w = document.getElementById("p5");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp6Text() {
-  const w = document.getElementById("p6");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp7Text() {
-  const w = document.getElementById("p7");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-function modifyp8Text() {
-  const w = document.getElementById("p8");
-  let a = getRandomInt(0,120);
-  let b = cardsp[a];
-  w.firstChild.nodeValue = b;
-}
-// mama's cards
-function  modifym1Text() {
-  const w = document.getElementById("m1");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym2Text() {
-  const w = document.getElementById("m2");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym3Text() {
-  const w = document.getElementById("m3");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym4Text() {
-  const w = document.getElementById("m4");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym5Text() {
-  const w = document.getElementById("m5");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym6Text() {
-  const w = document.getElementById("m6");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym7Text() {
-  const w = document.getElementById("m7");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifym8Text() {
-  const w = document.getElementById("m8");
-  let a = getRandomInt(0,120);
-  let b = cardsm[a];
-  w.firstChild.nodeValue = b;
-}
-// em's cards
-function  modifye1Text() {
-  const w = document.getElementById("e1");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye2Text() {
-  const w = document.getElementById("e2");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye3Text() {
-  const w = document.getElementById("e3");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye4Text() {
-  const w = document.getElementById("e4");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye5Text() {
-  const w = document.getElementById("e5");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye6Text() {
-  const w = document.getElementById("e6");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye7Text() {
-  const w = document.getElementById("e7");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifye8Text() {
-  const w = document.getElementById("e8");
-  let a = getRandomInt(0,120);
-  let b = cardse[a];
-  w.firstChild.nodeValue = b;
-}
-
-// v's cards
-function  modifyv1Text() {
-  const w = document.getElementById("v1");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv2Text() {
-  const w = document.getElementById("v2");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv3Text() {
-  const w = document.getElementById("v3");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv4Text() {
-  const w = document.getElementById("v4");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv5Text() {
-  const w = document.getElementById("v5");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv6Text() {
-  const w = document.getElementById("v6");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv7Text() {
-  const w = document.getElementById("v7");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
-function  modifyv8Text() {
-  const w = document.getElementById("v8");
-  let a = getRandomInt(0,120);
-  let b = cardsv[a];
-  w.firstChild.nodeValue = b;
-}
 
 // Add event listeners--figure out a way to make this more efficient??
 
