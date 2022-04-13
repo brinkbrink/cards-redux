@@ -700,43 +700,22 @@ document.getElementById("black").innerHTML = cards[bs];
 
 // functions to change card content
 
-// let randHand = () => {
-//  yada yada 
-//  return hand;
-// }
+const used = [0];
 
-let used = new Array();
 
-// const rand = [3, 10, 18, 20];
-
-// document.getElementById("demo").innerHTML = rand.find(checkRand);
-
-function checkRand(rand) {
-  return rand == 20;
-}
 
 let modifyText = (id, array) => {
   const w = document.getElementById(id);
   let rand = getRandomInt(0,120);
   let hand = array[rand];
-  if (checkRand(rand)==rand){
+  if (used.includes(rand)==true){
     modifyText(id, array)
   } else {
     let count = used.push(rand);
-    w.firstChild.nodeValue = hand;
+    console.log(rand);
+    w.firstChild.nodeValue = rand;
   }
 }
-
-//   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-//   // maybe a do while would be more approp
-//   //if used.has(a)==false{
-//   //   let b = cardsp[a];
-//        used.push(a);
-//   // } else {
-//   //   repeat??
-//   // }
-//   w.firstChild.nodeValue = b;
-// }
 
 // Add event listeners--figure out a way to make this more efficient?? and producable regardless of players
 
