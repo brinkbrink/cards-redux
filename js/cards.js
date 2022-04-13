@@ -697,8 +697,8 @@ let modifyText = (id, array) => {
   if (used.includes(rand)==true && used.length < array.length){
     modifyText(id, array)
   } else {
-    let count = used.push(rand);
-    console.log(rand);
+    used.push(rand);
+    // console.log(rand);
     w.firstChild.nodeValue = hand;
   }
 }
