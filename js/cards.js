@@ -10,6 +10,8 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
   }
 
+// for random array index
+
 let a = getRandomInt(0,14);
 let b = getRandomInt(15,29);
 let c = getRandomInt(30,44);
@@ -21,10 +23,8 @@ let h = getRandomInt(105,121);
 
 // create new array for whatever amount of players is chosen...something like
 // for loop or foreach user input { let cardsi = new Array(); }
+
 // papa's cards
-
-
-
 let cardsp = new Array();
 
 cardsp[0] = 'Silence.';
@@ -164,7 +164,6 @@ document.getElementById("p6").innerHTML = cardsp[f];
 document.getElementById("p7").innerHTML = cardsp[g];
 document.getElementById("p8").innerHTML = cardsp[h];
 
-
 // mom's cards
 let cardsm = new Array();
 
@@ -302,7 +301,6 @@ document.getElementById("m7").innerHTML = cardsm[g];
 document.getElementById("m8").innerHTML = cardsm[h];
 
 // em's cards
-
 let cardse = new Array();
 
 cardse[0] = 'Boogers.';
@@ -439,7 +437,6 @@ document.getElementById("e7").innerHTML = cardse[g];
 document.getElementById("e8").innerHTML = cardse[h];
 
 // v's cards
-
 let cardsv = new Array();
 
 cardsv[0] = 'Whoop whoop!';
@@ -563,8 +560,6 @@ cardsv[117] = 'White Christmas.';
 cardsv[118] = 'The Beach Boys.';
 cardsv[119] = 'Rare Exports.';
 cardsv[120] = 'The Santa Clause 2.';
-
-// add if statements to disallow repeat cards
 
 // add loop for each hand
 document.getElementById("v1").innerHTML = cardsv[a];
@@ -706,18 +701,34 @@ document.getElementById("black").innerHTML = cards[bs];
 // functions to change card content
 
 // let randHand = () => {
+//  yada yada 
 //  return hand;
 // }
+
+let used = new Array();
+
+// const rand = [3, 10, 18, 20];
+
+// document.getElementById("demo").innerHTML = rand.find(checkRand);
+
+function checkRand(rand) {
+  return rand == 20;
+}
 
 let modifyText = (id, array) => {
   const w = document.getElementById(id);
   let rand = getRandomInt(0,120);
   let hand = array[rand];
-  w.firstChild.nodeValue = hand;
+  if (checkRand(rand)==rand){
+    modifyText(id, array)
+  } else {
+    let count = used.push(rand);
+    w.firstChild.nodeValue = hand;
+  }
 }
 
 //   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-//   // 
+//   // maybe a do while would be more approp
 //   //if used.has(a)==false{
 //   //   let b = cardsp[a];
 //        used.push(a);
