@@ -35,6 +35,11 @@ h3 {
 ol {
     color: #fff;
     font-size: 2em;
+    padding: 1em;
+}
+
+li {
+    padding: 1em;
 }
 
 label {
