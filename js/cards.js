@@ -150,11 +150,6 @@ cardsp[119] = 'Ugly wrapping paper.';
 cardsp[120] = 'Mistletoe.';
 cardsp[121] = 'WILD CARD!! <img alt="panda the cat" src="images/panda.jpg">';
 
-
-
-// add if statements to disallow repeat cards
-
-// add loop for each hand
 document.getElementById("p1").innerHTML = cardsp[a];
 document.getElementById("p2").innerHTML = cardsp[b];
 document.getElementById("p3").innerHTML = cardsp[c];
@@ -288,9 +283,6 @@ cardsm[118] = 'Smoking legal weed in Colorado.';
 cardsm[119] = 'Clementine segments.';
 cardsm[120] = 'Lavendar growing on the Olympic Peninsula.';
 
-// add if statements to disallow repeat cards
-
-// add loop for each hand
 document.getElementById("m1").innerHTML = cardsm[a];
 document.getElementById("m2").innerHTML = cardsm[b];
 document.getElementById("m3").innerHTML = cardsm[c];
@@ -424,9 +416,6 @@ cardse[118] = 'Oktoberfest.';
 cardse[119] = 'Yakima hops.';
 cardse[120] = 'Eastern European history.';
 
-// add if statements to disallow repeat cards
-
-// add loop for each hand
 document.getElementById("e1").innerHTML = cardse[a];
 document.getElementById("e2").innerHTML = cardse[b];
 document.getElementById("e3").innerHTML = cardse[c];
@@ -561,7 +550,6 @@ cardsv[118] = 'The Beach Boys.';
 cardsv[119] = 'Rare Exports.';
 cardsv[120] = 'The Santa Clause 2.';
 
-// add loop for each hand
 document.getElementById("v1").innerHTML = cardsv[a];
 document.getElementById("v2").innerHTML = cardsv[b];
 document.getElementById("v3").innerHTML = cardsv[c];
@@ -700,48 +688,22 @@ document.getElementById("black").innerHTML = cards[bs];
 
 // functions to change card content
 
-// let randHand = () => {
-//  yada yada 
-//  return hand;
-// }
-
-let used = new Array();
-
-// const rand = [3, 10, 18, 20];
-
-// document.getElementById("demo").innerHTML = rand.find(checkRand);
-
-function checkRand(rand) {
-  return rand == 20;
-}
+const used = [0];
 
 let modifyText = (id, array) => {
   const w = document.getElementById(id);
   let rand = getRandomInt(0,120);
   let hand = array[rand];
-  if (checkRand(rand)==rand){
+  if (used.includes(rand)==true && used.length < array.length){
     modifyText(id, array)
   } else {
     let count = used.push(rand);
+    console.log(rand);
     w.firstChild.nodeValue = hand;
   }
 }
 
-//   // use the has() method https://flexiple.com/find-duplicates-javascript-array/ 
-//   // maybe a do while would be more approp
-//   //if used.has(a)==false{
-//   //   let b = cardsp[a];
-//        used.push(a);
-//   // } else {
-//   //   repeat??
-//   // }
-//   w.firstChild.nodeValue = b;
-// }
-
-// Add event listeners--figure out a way to make this more efficient?? and producable regardless of players
-
-// function addEventListeners
-// function addPlayerEvent
+// event listeners
 
 // black card
 document.getElementById("black").addEventListener("click", function(){ modifyText("black", cards); });
