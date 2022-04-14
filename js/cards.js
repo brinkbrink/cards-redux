@@ -12,20 +12,20 @@ function getRandomInt(min, max) {
 
 // for random array index
 
-let a = getRandomInt(0,14);
-let b = getRandomInt(15,29);
-let c = getRandomInt(30,44);
-let d = getRandomInt(45,59);
-let e = getRandomInt(60,74);
-let f = getRandomInt(75,89);
-let g = getRandomInt(90,104);
-let h = getRandomInt(105,121);
+const a = getRandomInt(0,14);
+const b = getRandomInt(15,29);
+const c = getRandomInt(30,44);
+const d = getRandomInt(45,59);
+const e = getRandomInt(60,74);
+const f = getRandomInt(75,89);
+const g = getRandomInt(90,104);
+const h = getRandomInt(105,121);
 
 // create new array for whatever amount of players is chosen...something like
 // for loop or foreach user input { let cardsi = new Array(); }
 
 // papa's cards
-let cardsp = new Array();
+const cardsp = new Array();
 
 cardsp[0] = 'Silence.';
 cardsp[1] = 'The illusion of choice in a latestage capitalist society.';
@@ -160,7 +160,7 @@ document.getElementById("p7").innerHTML = cardsp[g];
 document.getElementById("p8").innerHTML = cardsp[h];
 
 // mom's cards
-let cardsm = new Array();
+const cardsm = new Array();
 
 cardsm[0] = 'Switching to Geico.';
 cardsm[1] = 'Peeing a little bit.';
@@ -293,7 +293,7 @@ document.getElementById("m7").innerHTML = cardsm[g];
 document.getElementById("m8").innerHTML = cardsm[h];
 
 // em's cards
-let cardse = new Array();
+const cardse = new Array();
 
 cardse[0] = 'Boogers.';
 cardse[1] = 'The miracle of childbirth.';
@@ -426,7 +426,7 @@ document.getElementById("e7").innerHTML = cardse[g];
 document.getElementById("e8").innerHTML = cardse[h];
 
 // v's cards
-let cardsv = new Array();
+const cardsv = new Array();
 
 cardsv[0] = 'Whoop whoop!';
 cardsv[1] = 'Looking in the mirror, applying lipstick, and whispering “tonight, you will have sex with Tom Cruise.”';
@@ -560,7 +560,7 @@ document.getElementById("v7").innerHTML = cardsv[g];
 document.getElementById("v8").innerHTML = cardsv[h];
 
 // for the black card
-let cards = new Array();
+const cards = new Array();
 
 cards[0] = 'Hey Reddit! I am __________. Ask me anything.';
 cards[1] = 'Introducing X-treme Baseball! It is like baseball, but with __________!';
@@ -683,10 +683,10 @@ cards[118] = 'The new hosts for American Idol are Kelly Clarkson, ________ and _
 cards[119] = 'I heard the next stimulus package will just be _________.'
 cards[120] = 'Is this the end or is it just _________?'
 
-let bs = getRandomInt(0,120);
+const bs = getRandomInt(0,120);
 document.getElementById("black").innerHTML = cards[bs];
 
-// functions to change card content
+// function to change card content
 
 const used = [0];
 
